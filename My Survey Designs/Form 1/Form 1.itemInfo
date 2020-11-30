@@ -1,0 +1,58 @@
+{
+    "access": "private",
+    "accessInformation": null,
+    "appCategories": [
+    ],
+    "avgRating": 0,
+    "banner": null,
+    "categories": [
+    ],
+    "commentsEnabled": true,
+    "created": 1593112023000,
+    "culture": "en-gb",
+    "description": "This template includes all XLSForm features supported in Survey123 for ArcGIS.",
+    "documentation": null,
+    "extent": [
+    ],
+    "groupDesignations": null,
+    "guid": null,
+    "id": "88c21e07c46340e3a87a24b41f040931",
+    "industries": [
+    ],
+    "isOrgItem": true,
+    "itemControl": "admin",
+    "languages": [
+    ],
+    "largeThumbnail": null,
+    "licenseInfo": null,
+    "listed": false,
+    "modified": 1593113988000,
+    "name": "Form_1.zip",
+    "numComments": 0,
+    "numRatings": 0,
+    "numViews": 0,
+    "orgId": "WN5coiM8DFAUrNQ2",
+    "owner": "jgg513_uoy",
+    "ownerFolder": "9844ac3d59c64c44a2c7ad9bb461a3af",
+    "properties": null,
+    "protected": false,
+    "proxyFilter": null,
+    "scoreCompleteness": 41,
+    "screenshots": [
+    ],
+    "size": 59032,
+    "snippet": null,
+    "spatialReference": null,
+    "tags": [
+    ],
+    "thumbnail": "thumbnail/Form_1.png",
+    "title": "Form 1",
+    "type": "Form",
+    "typeKeywords": [
+        "Form",
+        "Survey123",
+        "Survey123 Connect",
+        "xForm"
+    ],
+    "url": null
+}

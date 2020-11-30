@@ -1,0 +1,340 @@
+{
+    "layers": [
+        {
+            "allowGeometryUpdates": true,
+            "capabilities": "Query,Editing,Create,Update,Delete",
+            "copyrightText": "",
+            "defaultVisibility": true,
+            "description": "",
+            "displayField": "objectid",
+            "drawingInfo": {
+                "renderer": {
+                    "label": "Form 1",
+                    "symbol": {
+                        "color": [
+                            0,
+                            178,
+                            255,
+                            48
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                178,
+                                255,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 2
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "type": "simple"
+                },
+                "transparency": 0
+            },
+            "extent": {
+                "spatialReference": {
+                    "wkid": 4326
+                },
+                "type": "extent",
+                "xmax": 180,
+                "xmin": -180,
+                "ymax": 90,
+                "ymin": -90
+            },
+            "fields": [
+                {
+                    "alias": "ObjectID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "name": "objectid",
+                    "nullable": false,
+                    "type": "esriFieldTypeOID"
+                },
+                {
+                    "alias": "GlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "length": 38,
+                    "name": "globalid",
+                    "nullable": false,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGlobalID"
+                }
+            ],
+            "geometryType": "esriGeometryPolygon",
+            "globalIdField": "globalid",
+            "hasAttachments": false,
+            "hasM": false,
+            "hasStaticData": false,
+            "hasZ": false,
+            "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+            "id": 0,
+            "indexes": [
+                {
+                    "description": "GlobalID index",
+                    "fields": "globalid",
+                    "isAscending": false,
+                    "isUnique": true,
+                    "name": "GlobalIDIndex"
+                }
+            ],
+            "isDataVersioned": false,
+            "maxRecordCount": 1000,
+            "maxScale": 0,
+            "minScale": 0,
+            "name": "Form_1",
+            "objectIdField": "objectid",
+            "relationships": [
+            ],
+            "supportedQueryFormats": "JSON",
+            "supportsAdvancedQueries": true,
+            "supportsRollbackOnFailureParameter": true,
+            "supportsStatistics": true,
+            "templates": [
+            ],
+            "type": "Feature Layer",
+            "typeIdField": "",
+            "types": [
+            ]
+        },
+        {
+            "allowGeometryUpdates": true,
+            "capabilities": "Query,Editing,Create,Update,Delete",
+            "copyrightText": "",
+            "defaultVisibility": true,
+            "description": "",
+            "displayField": "objectid",
+            "drawingInfo": {
+                "renderer": {
+                    "label": "Form 1",
+                    "symbol": {
+                        "color": [
+                            0,
+                            178,
+                            255,
+                            48
+                        ],
+                        "outline": {
+                            "color": [
+                                0,
+                                178,
+                                255,
+                                255
+                            ],
+                            "style": "esriSLSSolid",
+                            "type": "esriSLS",
+                            "width": 2
+                        },
+                        "style": "esriSFSSolid",
+                        "type": "esriSFS"
+                    },
+                    "type": "simple"
+                },
+                "transparency": 0
+            },
+            "extent": {
+                "spatialReference": {
+                    "wkid": 4326
+                },
+                "type": "extent",
+                "xmax": 180,
+                "xmin": -180,
+                "ymax": 90,
+                "ymin": -90
+            },
+            "fields": [
+                {
+                    "alias": "ObjectID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "name": "objectid",
+                    "nullable": false,
+                    "type": "esriFieldTypeOID"
+                },
+                {
+                    "alias": "GlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "length": 38,
+                    "name": "globalid",
+                    "nullable": false,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGlobalID"
+                },
+                {
+                    "alias": "Site Code",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Site_Code",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Context Number",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Context_Number",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "ParentGlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": true,
+                    "length": 38,
+                    "name": "parentglobalid",
+                    "nullable": true,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGUID"
+                }
+            ],
+            "geometryType": "esriGeometryPolygon",
+            "globalIdField": "globalid",
+            "hasAttachments": false,
+            "hasM": false,
+            "hasStaticData": false,
+            "hasZ": false,
+            "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+            "id": 1,
+            "indexes": [
+                {
+                    "description": "GlobalID index",
+                    "fields": "globalid",
+                    "isAscending": false,
+                    "isUnique": true,
+                    "name": "GlobalIDIndex"
+                },
+                {
+                    "description": "Child Key Field index",
+                    "fields": "parentglobalid",
+                    "isAscending": false,
+                    "isUnique": false,
+                    "name": "ParentGlobalIDIndex"
+                }
+            ],
+            "isDataVersioned": false,
+            "maxRecordCount": 1000,
+            "maxScale": 0,
+            "minScale": 0,
+            "name": "Context_Sheet",
+            "objectIdField": "objectid",
+            "relationships": [
+            ],
+            "supportedQueryFormats": "JSON",
+            "supportsAdvancedQueries": true,
+            "supportsRollbackOnFailureParameter": true,
+            "supportsStatistics": true,
+            "templates": [
+            ],
+            "type": "Feature Layer",
+            "typeIdField": "",
+            "types": [
+            ]
+        }
+    ],
+    "tables": [
+        {
+            "capabilities": "Create,Delete,Query,Update,Uploads,Editing",
+            "copyrightText": "",
+            "defaultVisibility": true,
+            "description": "",
+            "displayField": "objectid",
+            "editFieldsInfo": null,
+            "fields": [
+                {
+                    "alias": "ObjectID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "name": "objectid",
+                    "nullable": false,
+                    "type": "esriFieldTypeOID"
+                },
+                {
+                    "alias": "GlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "length": 38,
+                    "name": "globalid",
+                    "nullable": false,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGlobalID"
+                },
+                {
+                    "alias": "Context Number",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Context_Number",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "ParentGlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": true,
+                    "length": 38,
+                    "name": "parentglobalid",
+                    "nullable": true,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGUID"
+                }
+            ],
+            "globalIdField": "globalid",
+            "hasAttachments": false,
+            "htmlPopupType": "esriServerHTMLPopupTypeNone",
+            "id": 2,
+            "indexes": [
+                {
+                    "description": "GlobalID index",
+                    "fields": "globalid",
+                    "isAscending": false,
+                    "isUnique": true,
+                    "name": "GlobalIDIndex"
+                },
+                {
+                    "description": "Child Key Field index",
+                    "fields": "parentglobalid",
+                    "isAscending": false,
+                    "isUnique": false,
+                    "name": "ParentGlobalIDIndex"
+                }
+            ],
+            "isDataVersioned": false,
+            "maxRecordCount": 1000,
+            "name": "Context_Index",
+            "objectIdField": "objectid",
+            "ownershipBasedAccessControlForFeatures": null,
+            "relationships": [
+            ],
+            "supportedQueryFormats": "JSON, AMF",
+            "supportsAdvancedQueries": true,
+            "supportsRollbackOnFailureParameter": true,
+            "supportsStatistics": true,
+            "syncCanReturnChanges": false,
+            "templates": [
+            ],
+            "type": "Table",
+            "typeIdField": "",
+            "types": [
+            ],
+            "useStandardizedQueries": true
+        }
+    ]
+}

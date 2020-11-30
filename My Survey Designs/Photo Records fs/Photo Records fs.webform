@@ -1,0 +1,229 @@
+{
+  "form": "<form autocomplete=\"off\" novalidate=\"novalidate\" class=\"or clearfix\" dir=\"ltr\" id=\"Photo_Records\" action=\"https://www.arcgis.com/sharing/rest/content/items/98b796dff0aa44cbabeb65910a062cff\" method=\"post\">\n<!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSL stylesheet created by Enketo LLC.--><section class=\"form-logo\"> </section><h3 dir=\"auto\" id=\"form-title\">Photo Records</h3>\n  \n  \n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Camera Number</span><input type=\"number\" name=\"/Photo_Records_fs/Camera_Number\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Group</span><input type=\"number\" name=\"/Photo_Records_fs/Photo_Group\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Photo Number</span><span lang=\"\" class=\"or-hint active\">e.g DSC - 0028</span><input type=\"text\" name=\"/Photo_Records_fs/Photo_Number\" data-type-xml=\"string\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Date</span><input type=\"datetime-local\" name=\"/Photo_Records_fs/Dates\" data-calculate=\"today()\" data-type-xml=\"dateTime\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Context Number</span><input type=\"number\" name=\"/Photo_Records_fs/Context_Number\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Description</span><input type=\"text\" name=\"/Photo_Records_fs/Description\" data-type-xml=\"string\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Notes</span><input type=\"text\" name=\"/Photo_Records_fs/Notes\" data-type-xml=\"string\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Orientation</span><span lang=\"\" class=\"or-hint active\">e.g NE, SW, E</span><input type=\"text\" name=\"/Photo_Records_fs/Orientation\" data-type-xml=\"string\"/></label>\n  \n<fieldset id=\"or-calculated-items\" style=\"display:none;\"><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/Photo_Records_fs/meta/instanceID\" data-calculate=\"concat('uuid:', uuid())\" data-type-xml=\"string\"/></label></fieldset></form>",
+  "languageMap": {},
+  "model": "<model><instance>\n        <Photo_Records_fs xmlns:esri=\"http://esri.com/xforms\" xmlns:jr=\"http://openrosa.org/javarosa\" xmlns:odk=\"http://www.opendatakit.org/xforms\" xmlns:orx=\"http://openrosa.org/xforms\" id=\"Photo_Records\">\n          <Camera_Number/>\n          <Photo_Group/>\n          <Photo_Number/>\n          <Dates/>\n          <Context_Number/>\n          <Description/>\n          <Notes/>\n          <Orientation/>\n          <meta>\n            <instanceID/>\n          </meta>\n        </Photo_Records_fs>\n      </instance></model>",
+  "success": true,
+  "surveyFormJson": {
+    "footer": {
+      "content": "",
+      "isVisible": true
+    },
+    "header": {
+      "content": "%3Cp%20title%3D'Photo%20Records'%3EPhoto%20Records%3C%2Fp%3E",
+      "isVisible": true
+    },
+    "layerName": "Photo_Records",
+    "portalUrl": "https://www.arcgis.com",
+    "questions": [
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Camera_Number",
+        "fieldType": "esriFieldTypeInteger",
+        "id": "/Photo_Records_fs/Camera_Number",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Camera Number",
+        "name": "Camera_Number",
+        "position": 0,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Photo_Group",
+        "fieldType": "esriFieldTypeInteger",
+        "id": "/Photo_Records_fs/Photo_Group",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Group",
+        "name": "Photo_Group",
+        "position": 1,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldLength": "255",
+        "fieldName": "Photo_Number",
+        "fieldType": "esriFieldTypeString",
+        "id": "/Photo_Records_fs/Photo_Number",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Photo Number",
+        "name": "Photo_Number",
+        "position": 2,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "today()",
+        "defaultValue": "",
+        "fieldName": "Dates",
+        "fieldType": "esriFieldTypeDate",
+        "id": "/Photo_Records_fs/Dates",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Date",
+        "name": "Dates",
+        "position": 3,
+        "type": "esriQuestionTypeDateTime",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Context_Number",
+        "fieldType": "esriFieldTypeInteger",
+        "id": "/Photo_Records_fs/Context_Number",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Context Number",
+        "name": "Context_Number",
+        "position": 4,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldLength": "255",
+        "fieldName": "Description",
+        "fieldType": "esriFieldTypeString",
+        "id": "/Photo_Records_fs/Description",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Description",
+        "name": "Description",
+        "position": 5,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldLength": "255",
+        "fieldName": "Notes",
+        "fieldType": "esriFieldTypeString",
+        "id": "/Photo_Records_fs/Notes",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Notes",
+        "name": "Notes",
+        "position": 6,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldLength": "255",
+        "fieldName": "Orientation",
+        "fieldType": "esriFieldTypeString",
+        "id": "/Photo_Records_fs/Orientation",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Orientation",
+        "name": "Orientation",
+        "position": 7,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      }
+    ],
+    "rules": [],
+    "settings": {
+      "draftInfo": {
+        "isEnabled": false
+      },
+      "instanceName": null,
+      "isVersionLocked": true,
+      "multiSubmissionInfo": {
+        "maxAllowed": 0,
+        "showSubmitAnotherTip": false
+      },
+      "notificationsInfo": {},
+      "openStatusInfo": {
+        "closedStatusContent": "",
+        "schedule": {
+          "end": null,
+          "start": null
+        },
+        "status": "open"
+      },
+      "recordStartEndTime": {
+        "fieldInfos": [],
+        "isEnabled": false
+      },
+      "thankYouScreenContent": ""
+    },
+    "subHeader": {
+      "content": "",
+      "isVisible": true
+    },
+    "submit": {
+      "buttonText": ""
+    },
+    "themes": [
+      {
+        "form": {
+          "backgroundColor": "#ffffff",
+          "backgroundOpacity": 1,
+          "inputBackgroundColor": "#ffffff",
+          "inputTextColor": "#505050",
+          "primaryColor": "#31872E",
+          "primaryTextColor": "#ffffff",
+          "textColor": "#505050"
+        },
+        "header": {
+          "backgroundColor": "#31872E",
+          "textColor": "#ffffff"
+        },
+        "id": null,
+        "isEnabled": true,
+        "name": "theme-color1",
+        "webpage": {
+          "backgroundColor": "#B7DCC7"
+        }
+      }
+    ],
+    "version": "3.10"
+  },
+  "transformerVersion": "1.37.0"
+}

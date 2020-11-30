@@ -1,0 +1,415 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:esri="http://esri.com/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Context Sheets</h:title>
+    <model>
+      <submission action="https://www.arcgis.com/sharing/rest/content/items/98b796dff0aa44cbabeb65910a062cff" method="form-data-post"/>
+      <itext>
+        <translation default="true()" lang="default">
+          <text id="/Context_Sheet_FS/Harris_Matrix/Stratigraphy:label">
+            <value form="image">jr://images/Stratigraphy.svg</value>
+            <value>Stratigraphy</value>
+          </text>
+        </translation>
+      </itext>
+      <instance>
+        <Context_Sheet_FS id="Context_Sheets">
+          <Site_Code/>
+          <Context_Number/>
+          <Context_Types/>
+          <Colour/>
+          <Composition/>
+          <Compaction/>
+          <Thickness/>
+          <Other_Info_fill/>
+          <Shape_in_Plan/>
+          <Orientation/>
+          <Corners_in_plan/>
+          <Break_slope_top/>
+          <Context_Depth/>
+          <Nature_sides/>
+          <Break_slope_base/>
+          <Nature_base/>
+          <Other_Info_cut/>
+          <Harris_Matrix jr:template="">
+            <Stratigraphy/>
+            <Stratigraphic_Context/>
+            <Stratigraphic_Above_Middle/>
+            <Stratigraphic_Above_Left/>
+            <Stratigraphic_Above_Far_Left/>
+            <Stratigraphic_Above_Right/>
+            <Stratigraphic_Above_Far_Right/>
+            <Stratigraphic_Below_Middle/>
+            <Stratigraphic_Below_Left/>
+            <Stratigraphic_Below_Far_Left/>
+            <Stratigraphic_Below_Right/>
+            <Stratigraphic_Below_Far_Right/>
+          </Harris_Matrix>
+          <Spatial_Photographic_Info>
+            <Plan_Numbers/>
+            <Other_Drawings/>
+            <Photographs/>
+            <Photo_ref_number/>
+          </Spatial_Photographic_Info>
+          <Finds_information>
+            <Artefact_Present_Finds/>
+            <Artefact_Present_Collection/>
+            <Samples_taken/>
+            <no_bags_Bulk/>
+            <no_bags_Char/>
+            <no_bags_C14/>
+            <no_bags_Dendr/>
+            <no_bags_Other/>
+            <Initials/>
+            <Checked_Date/>
+          </Finds_information>
+          <Interpretative_Info>
+            <Functional_Interp_and_comments/>
+            <Provisional_Date/>
+            <Phasing_Grouping/>
+            <Initials_Interp/>
+            <Finish_Date/>
+            <Images/>
+          </Interpretative_Info>
+          <meta>
+            <instanceID/>
+          </meta>
+        </Context_Sheet_FS>
+      </instance>
+      <bind nodeset="/Context_Sheet_FS/Site_Code" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Context_Number" type="int"/>
+      <bind nodeset="/Context_Sheet_FS/Context_Types" type="select1"/>
+      <bind nodeset="/Context_Sheet_FS/Colour" relevant=" /Context_Sheet_FS/Context_Types  = 'fill'" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Composition" relevant=" /Context_Sheet_FS/Context_Types  = 'fill'" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Compaction" relevant=" /Context_Sheet_FS/Context_Types  = 'fill'" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Thickness" relevant=" /Context_Sheet_FS/Context_Types  = 'fill'" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Other_Info_fill" relevant=" /Context_Sheet_FS/Context_Types  = 'fill'" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Shape_in_Plan" relevant=" /Context_Sheet_FS/Context_Types  = 'cut'" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Orientation" relevant=" /Context_Sheet_FS/Context_Types  = 'cut'" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Corners_in_plan" relevant=" /Context_Sheet_FS/Context_Types  = 'cut'" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Break_slope_top" relevant=" /Context_Sheet_FS/Context_Types  = 'cut'" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Context_Depth" relevant=" /Context_Sheet_FS/Context_Types  = 'cut'" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Nature_sides" relevant=" /Context_Sheet_FS/Context_Types  = 'cut'" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Break_slope_base" relevant=" /Context_Sheet_FS/Context_Types  = 'cut'" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Nature_base" relevant=" /Context_Sheet_FS/Context_Types  = 'cut'" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Other_Info_cut" relevant=" /Context_Sheet_FS/Context_Types  = 'cut'" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Harris_Matrix/Stratigraphy" type="select"/>
+      <bind nodeset="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Context" relevant="selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Centre')" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Middle" relevant="selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Above')" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Left" relevant="selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Above_Left')" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Far_Left" relevant="selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Above_Far_Left')" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Right" relevant="selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Above_Right')" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Far_Right" relevant="selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Above_Far_Right')" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Middle" relevant="selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Below')" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Left" relevant="selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Below_Left')" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Far_Left" relevant="selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Below_Far_Left')" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Right" relevant="selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Below_Right')" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Far_Right" relevant="selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Below_Far_Right')" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Spatial_Photographic_Info/Plan_Numbers" type="int"/>
+      <bind nodeset="/Context_Sheet_FS/Spatial_Photographic_Info/Other_Drawings" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Spatial_Photographic_Info/Photographs" type="select1"/>
+      <bind nodeset="/Context_Sheet_FS/Spatial_Photographic_Info/Photo_ref_number" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Finds_information/Artefact_Present_Finds" type="select"/>
+      <bind nodeset="/Context_Sheet_FS/Finds_information/Artefact_Present_Collection" type="select1"/>
+      <bind nodeset="/Context_Sheet_FS/Finds_information/Samples_taken" type="select"/>
+      <bind nodeset="/Context_Sheet_FS/Finds_information/no_bags_Bulk" relevant="selected( /Context_Sheet_FS/Finds_information/Samples_taken ,'Bulk')" type="int"/>
+      <bind nodeset="/Context_Sheet_FS/Finds_information/no_bags_Char" relevant="selected( /Context_Sheet_FS/Finds_information/Samples_taken ,'Char')" type="int"/>
+      <bind nodeset="/Context_Sheet_FS/Finds_information/no_bags_C14" relevant="selected( /Context_Sheet_FS/Finds_information/Samples_taken ,'C14')" type="int"/>
+      <bind nodeset="/Context_Sheet_FS/Finds_information/no_bags_Dendr" relevant="selected( /Context_Sheet_FS/Finds_information/Samples_taken ,'Dendr')" type="int"/>
+      <bind nodeset="/Context_Sheet_FS/Finds_information/no_bags_Other" relevant="selected( /Context_Sheet_FS/Finds_information/Samples_taken ,'Other')" type="int"/>
+      <bind nodeset="/Context_Sheet_FS/Finds_information/Initials" type="string"/>
+      <bind calculate="today()" nodeset="/Context_Sheet_FS/Finds_information/Checked_Date" type="dateTime"/>
+      <bind nodeset="/Context_Sheet_FS/Interpretative_Info/Functional_Interp_and_comments" type="string"/>
+      <bind calculate="today()" nodeset="/Context_Sheet_FS/Interpretative_Info/Provisional_Date" type="date"/>
+      <bind nodeset="/Context_Sheet_FS/Interpretative_Info/Phasing_Grouping" type="string"/>
+      <bind nodeset="/Context_Sheet_FS/Interpretative_Info/Initials_Interp" type="string"/>
+      <bind calculate="today()" nodeset="/Context_Sheet_FS/Interpretative_Info/Finish_Date" type="date"/>
+      <bind nodeset="/Context_Sheet_FS/Interpretative_Info/Images" type="binary"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Context_Sheet_FS/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Context_Sheet_FS/Site_Code">
+      <label>Site Code</label>
+    </input>
+    <input ref="/Context_Sheet_FS/Context_Number">
+      <label>Context Number</label>
+    </input>
+    <select1 ref="/Context_Sheet_FS/Context_Types">
+      <label>Context Type</label>
+      <item>
+        <label>cut</label>
+        <value>cut</value>
+      </item>
+      <item>
+        <label>fill</label>
+        <value>fill</value>
+      </item>
+      <item>
+        <label>other</label>
+        <value>other</value>
+      </item>
+    </select1>
+    <input ref="/Context_Sheet_FS/Colour">
+      <label>Colour</label>
+    </input>
+    <input ref="/Context_Sheet_FS/Composition">
+      <label>Composition</label>
+    </input>
+    <input ref="/Context_Sheet_FS/Compaction">
+      <label>Compaction</label>
+    </input>
+    <input ref="/Context_Sheet_FS/Thickness">
+      <label>Thickness</label>
+    </input>
+    <input ref="/Context_Sheet_FS/Other_Info_fill">
+      <label>Other information and comments</label>
+    </input>
+    <input ref="/Context_Sheet_FS/Shape_in_Plan">
+      <label>Shape in plan</label>
+    </input>
+    <input ref="/Context_Sheet_FS/Orientation">
+      <label>Orientation</label>
+    </input>
+    <input ref="/Context_Sheet_FS/Corners_in_plan">
+      <label>Corners in plan</label>
+    </input>
+    <input ref="/Context_Sheet_FS/Break_slope_top">
+      <label>Break in slope-top</label>
+    </input>
+    <input ref="/Context_Sheet_FS/Context_Depth">
+      <label>Depth</label>
+    </input>
+    <input ref="/Context_Sheet_FS/Nature_sides">
+      <label>Nature of sides</label>
+    </input>
+    <input ref="/Context_Sheet_FS/Break_slope_base">
+      <label>Break of slope-base</label>
+    </input>
+    <input ref="/Context_Sheet_FS/Nature_base">
+      <label>Nature of base</label>
+    </input>
+    <input ref="/Context_Sheet_FS/Other_Info_cut">
+      <label>Other information and comments</label>
+    </input>
+    <group ref="/Context_Sheet_FS/Harris_Matrix">
+      <label>Harris Matrix</label>
+      <repeat appearance="compact" nodeset="/Context_Sheet_FS/Harris_Matrix">
+        <select appearance="image-map" ref="/Context_Sheet_FS/Harris_Matrix/Stratigraphy">
+          <label ref="jr:itext('/Context_Sheet_FS/Harris_Matrix/Stratigraphy:label')"/>
+          <hint>Click on the boxes to add a stratigraphic point</hint>
+          <item>
+            <label>Centre</label>
+            <value>Centre</value>
+          </item>
+          <item>
+            <label>Above</label>
+            <value>Above</value>
+          </item>
+          <item>
+            <label>Below</label>
+            <value>Below</value>
+          </item>
+          <item>
+            <label>Above_Far_Right</label>
+            <value>Above_Far_Right</value>
+          </item>
+          <item>
+            <label>Above_Right</label>
+            <value>Above_Right</value>
+          </item>
+          <item>
+            <label>Above_Far_Left</label>
+            <value>Above_Far_Left</value>
+          </item>
+          <item>
+            <label>Above_Left</label>
+            <value>Above_Left</value>
+          </item>
+          <item>
+            <label>Below_Far_Right</label>
+            <value>Below_Far_Right</value>
+          </item>
+          <item>
+            <label>Below_Right</label>
+            <value>Below_Right</value>
+          </item>
+          <item>
+            <label>Below_Far_Left</label>
+            <value>Below_Far_Left</value>
+          </item>
+          <item>
+            <label>Below_Left</label>
+            <value>Below_Left</value>
+          </item>
+        </select>
+        <input ref="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Context">
+          <label>Centre Number</label>
+        </input>
+        <input ref="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Middle">
+          <label>Above Middle Number</label>
+        </input>
+        <input ref="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Left">
+          <label>Above Left Number</label>
+        </input>
+        <input ref="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Far_Left">
+          <label>Above Far Left Number</label>
+        </input>
+        <input ref="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Right">
+          <label>Above Right Number</label>
+        </input>
+        <input ref="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Far_Right">
+          <label>Above Far Right Number</label>
+        </input>
+        <input ref="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Middle">
+          <label>Below Middle Number</label>
+        </input>
+        <input ref="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Left">
+          <label>Below Left Number</label>
+        </input>
+        <input ref="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Far_Left">
+          <label>Below Far Left Number</label>
+        </input>
+        <input ref="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Right">
+          <label>Below Right Number</label>
+        </input>
+        <input ref="/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Far_Right">
+          <label>Below Far Right Number</label>
+        </input>
+      </repeat>
+    </group>
+    <group appearance="compact" ref="/Context_Sheet_FS/Spatial_Photographic_Info">
+      <label>Spatial Photographic Information</label>
+      <input ref="/Context_Sheet_FS/Spatial_Photographic_Info/Plan_Numbers">
+        <label>Plan Numbers</label>
+      </input>
+      <input ref="/Context_Sheet_FS/Spatial_Photographic_Info/Other_Drawings">
+        <label>Other Drawings</label>
+      </input>
+      <select1 ref="/Context_Sheet_FS/Spatial_Photographic_Info/Photographs">
+        <label>Photographs</label>
+        <item>
+          <label>Yes</label>
+          <value>yes</value>
+        </item>
+        <item>
+          <label>No</label>
+          <value>no</value>
+        </item>
+      </select1>
+      <input ref="/Context_Sheet_FS/Spatial_Photographic_Info/Photo_ref_number">
+        <label>Photograph Reference Numbers</label>
+      </input>
+    </group>
+    <group appearance="compact" ref="/Context_Sheet_FS/Finds_information">
+      <label>Finds information</label>
+      <select appearance="horizontal-compact" ref="/Context_Sheet_FS/Finds_information/Artefact_Present_Finds">
+        <label>Artefacts Present</label>
+        <item>
+          <label>Pot</label>
+          <value>Pot</value>
+        </item>
+        <item>
+          <label>Tile</label>
+          <value>Tile</value>
+        </item>
+        <item>
+          <label>Brick</label>
+          <value>Brick</value>
+        </item>
+        <item>
+          <label>Bone</label>
+          <value>Bone</value>
+        </item>
+        <item>
+          <label>Seed</label>
+          <value>Seed</value>
+        </item>
+        <item>
+          <label>Metal</label>
+          <value>Metal</value>
+        </item>
+      </select>
+      <select1 appearance="horizontal-compact" ref="/Context_Sheet_FS/Finds_information/Artefact_Present_Collection">
+        <label>Collection Keyword</label>
+        <item>
+          <label>All</label>
+          <value>All</value>
+        </item>
+        <item>
+          <label>Some</label>
+          <value>Some</value>
+        </item>
+        <item>
+          <label>None</label>
+          <value>None</value>
+        </item>
+      </select1>
+      <select appearance="horizontal-compact" ref="/Context_Sheet_FS/Finds_information/Samples_taken">
+        <label>Samples taken</label>
+        <item>
+          <label>Bulk</label>
+          <value>Bulk</value>
+        </item>
+        <item>
+          <label>Char</label>
+          <value>Char</value>
+        </item>
+        <item>
+          <label>C14</label>
+          <value>C14</value>
+        </item>
+        <item>
+          <label>Dendr</label>
+          <value>Dendr</value>
+        </item>
+        <item>
+          <label>Other</label>
+          <value>Other</value>
+        </item>
+      </select>
+      <input ref="/Context_Sheet_FS/Finds_information/no_bags_Bulk">
+        <label>Number of Bulk bags</label>
+      </input>
+      <input ref="/Context_Sheet_FS/Finds_information/no_bags_Char">
+        <label>Number of Char bags</label>
+      </input>
+      <input ref="/Context_Sheet_FS/Finds_information/no_bags_C14">
+        <label>Number of C14 bags</label>
+      </input>
+      <input ref="/Context_Sheet_FS/Finds_information/no_bags_Dendr">
+        <label>Number of Dendr bags</label>
+      </input>
+      <input ref="/Context_Sheet_FS/Finds_information/no_bags_Other">
+        <label>Number of Other bags</label>
+      </input>
+      <input ref="/Context_Sheet_FS/Finds_information/Initials">
+        <label>Initials</label>
+      </input>
+      <input ref="/Context_Sheet_FS/Finds_information/Checked_Date">
+        <label>Checked &amp; Date</label>
+      </input>
+    </group>
+    <group appearance="compact" ref="/Context_Sheet_FS/Interpretative_Info">
+      <label>Interpretative Information</label>
+      <input appearance="multiline" ref="/Context_Sheet_FS/Interpretative_Info/Functional_Interp_and_comments">
+        <label>Functional Interpretation and Other Comments</label>
+      </input>
+      <input ref="/Context_Sheet_FS/Interpretative_Info/Provisional_Date">
+        <label>Provisional Date</label>
+      </input>
+      <input ref="/Context_Sheet_FS/Interpretative_Info/Phasing_Grouping">
+        <label>Phasing/Grouping</label>
+      </input>
+      <input ref="/Context_Sheet_FS/Interpretative_Info/Initials_Interp">
+        <label>Initials</label>
+      </input>
+      <input ref="/Context_Sheet_FS/Interpretative_Info/Finish_Date">
+        <label>Date</label>
+      </input>
+      <upload mediatype="image/*" ref="/Context_Sheet_FS/Interpretative_Info/Images">
+        <label>Images</label>
+      </upload>
+    </group>
+  </h:body>
+</h:html>

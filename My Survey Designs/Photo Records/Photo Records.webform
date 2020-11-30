@@ -1,0 +1,220 @@
+{
+  "form": "<form autocomplete=\"off\" novalidate=\"novalidate\" class=\"or clearfix\" dir=\"ltr\" id=\"Photo_Records\">\n<!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSL stylesheet created by Enketo LLC.--><section class=\"form-logo\"> </section><h3 dir=\"auto\" id=\"form-title\">My Survey</h3>\n  \n  \n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Camera Number</span><input type=\"number\" name=\"/Photo_Records/Camera_Number\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Group</span><input type=\"number\" name=\"/Photo_Records/Photo_Group\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Photo Number</span><input type=\"text\" name=\"/Photo_Records/Photo_Number\" data-type-xml=\"string\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Date</span><input type=\"date\" name=\"/Photo_Records/Dates\" data-type-xml=\"date\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Context Number</span><input type=\"number\" name=\"/Photo_Records/Context_Number\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Description</span><input type=\"text\" name=\"/Photo_Records/Description\" data-type-xml=\"string\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Notes</span><input type=\"text\" name=\"/Photo_Records/Notes\" data-type-xml=\"string\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Orientation</span><span lang=\"\" class=\"or-hint active\">e.g NE, SW, E</span><input type=\"text\" name=\"/Photo_Records/Orientation\" data-type-xml=\"string\"/></label>\n  \n<fieldset id=\"or-calculated-items\" style=\"display:none;\"><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/Photo_Records/meta/instanceID\" data-calculate=\"concat('uuid:', uuid())\" data-type-xml=\"string\"/></label></fieldset></form>",
+  "languageMap": {},
+  "model": "<model><instance>\n        <Photo_Records xmlns:esri=\"http://esri.com/xforms\" xmlns:jr=\"http://openrosa.org/javarosa\" xmlns:odk=\"http://www.opendatakit.org/xforms\" xmlns:orx=\"http://openrosa.org/xforms\" id=\"Photo_Records\">\n          <Camera_Number/>\n          <Photo_Group/>\n          <Photo_Number/>\n          <Dates/>\n          <Context_Number/>\n          <Description/>\n          <Notes/>\n          <Orientation/>\n          <meta>\n            <instanceID/>\n          </meta>\n        </Photo_Records>\n      </instance></model>",
+  "success": true,
+  "surveyFormJson": {
+    "footer": {
+      "content": "",
+      "isVisible": true
+    },
+    "header": {
+      "content": "%3Cp%20title%3D'My%20Survey'%3EMy%20Survey%3C%2Fp%3E",
+      "isVisible": true
+    },
+    "layerName": "Photo_Records",
+    "portalUrl": "https://www.arcgis.com",
+    "questions": [
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Camera_Number",
+        "id": "/Photo_Records/Camera_Number",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Camera Number",
+        "name": "Camera_Number",
+        "position": 0,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Photo_Group",
+        "id": "/Photo_Records/Photo_Group",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Group",
+        "name": "Photo_Group",
+        "position": 1,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Photo_Number",
+        "id": "/Photo_Records/Photo_Number",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Photo Number",
+        "name": "Photo_Number",
+        "position": 2,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "appearance": {
+          "layout": "day-month-year"
+        },
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Dates",
+        "id": "/Photo_Records/Dates",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Date",
+        "name": "Dates",
+        "position": 3,
+        "type": "esriQuestionTypeDate",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Context_Number",
+        "id": "/Photo_Records/Context_Number",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Context Number",
+        "name": "Context_Number",
+        "position": 4,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Description",
+        "id": "/Photo_Records/Description",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Description",
+        "name": "Description",
+        "position": 5,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Notes",
+        "id": "/Photo_Records/Notes",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Notes",
+        "name": "Notes",
+        "position": 6,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Orientation",
+        "id": "/Photo_Records/Orientation",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Orientation",
+        "name": "Orientation",
+        "position": 7,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      }
+    ],
+    "rules": [],
+    "settings": {
+      "draftInfo": {
+        "isEnabled": false
+      },
+      "instanceName": null,
+      "isVersionLocked": true,
+      "multiSubmissionInfo": {
+        "maxAllowed": 0,
+        "showSubmitAnotherTip": false
+      },
+      "notificationsInfo": {},
+      "openStatusInfo": {
+        "closedStatusContent": "",
+        "schedule": {
+          "end": null,
+          "start": null
+        },
+        "status": "open"
+      },
+      "recordStartEndTime": {
+        "fieldInfos": [],
+        "isEnabled": false
+      },
+      "thankYouScreenContent": ""
+    },
+    "subHeader": {
+      "content": "",
+      "isVisible": true
+    },
+    "submit": {
+      "buttonText": ""
+    },
+    "themes": [
+      {
+        "form": {
+          "backgroundColor": "#ffffff",
+          "backgroundOpacity": 1,
+          "inputBackgroundColor": "#ffffff",
+          "inputTextColor": "#505050",
+          "primaryColor": "#31872E",
+          "primaryTextColor": "#ffffff",
+          "textColor": "#505050"
+        },
+        "header": {
+          "backgroundColor": "#31872E",
+          "textColor": "#ffffff"
+        },
+        "id": null,
+        "isEnabled": true,
+        "name": "theme-color1",
+        "webpage": {
+          "backgroundColor": "#B7DCC7"
+        }
+      }
+    ],
+    "version": "3.10"
+  },
+  "transformerVersion": "1.37.0"
+}

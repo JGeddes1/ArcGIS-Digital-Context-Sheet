@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:esri="http://esri.com/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>My Survey</h:title>
+    <model>
+      <instance>
+        <Photo_Records id="Photo_Records">
+          <Camera_Number/>
+          <Photo_Group/>
+          <Photo_Number/>
+          <Dates/>
+          <Context_Number/>
+          <Description/>
+          <Notes/>
+          <Orientation/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </Photo_Records>
+      </instance>
+      <bind nodeset="/Photo_Records/Camera_Number" type="int"/>
+      <bind nodeset="/Photo_Records/Photo_Group" type="int"/>
+      <bind nodeset="/Photo_Records/Photo_Number" type="string"/>
+      <bind nodeset="/Photo_Records/Dates" type="date"/>
+      <bind nodeset="/Photo_Records/Context_Number" type="int"/>
+      <bind nodeset="/Photo_Records/Description" type="string"/>
+      <bind nodeset="/Photo_Records/Notes" type="string"/>
+      <bind nodeset="/Photo_Records/Orientation" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Photo_Records/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Photo_Records/Camera_Number">
+      <label>Camera Number</label>
+    </input>
+    <input ref="/Photo_Records/Photo_Group">
+      <label>Group</label>
+    </input>
+    <input ref="/Photo_Records/Photo_Number">
+      <label>Photo Number</label>
+    </input>
+    <input ref="/Photo_Records/Dates">
+      <label>Date</label>
+    </input>
+    <input ref="/Photo_Records/Context_Number">
+      <label>Context Number</label>
+    </input>
+    <input ref="/Photo_Records/Description">
+      <label>Description</label>
+    </input>
+    <input ref="/Photo_Records/Notes">
+      <label>Notes</label>
+    </input>
+    <input ref="/Photo_Records/Orientation">
+      <label>Orientation</label>
+      <hint>e.g NE, SW, E</hint>
+    </input>
+  </h:body>
+</h:html>

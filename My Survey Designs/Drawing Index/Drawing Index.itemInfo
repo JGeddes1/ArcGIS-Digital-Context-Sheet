@@ -1,0 +1,58 @@
+{
+    "access": "private",
+    "accessInformation": null,
+    "appCategories": [
+    ],
+    "avgRating": 0,
+    "banner": null,
+    "categories": [
+    ],
+    "commentsEnabled": true,
+    "created": 1593950757000,
+    "culture": "en-gb",
+    "description": "This template includes all XLSForm features supported in Survey123 for ArcGIS.",
+    "documentation": null,
+    "extent": [
+    ],
+    "groupDesignations": null,
+    "guid": null,
+    "id": "a79a2d3ac8b44044823452f6655b253d",
+    "industries": [
+    ],
+    "isOrgItem": true,
+    "itemControl": "admin",
+    "languages": [
+    ],
+    "largeThumbnail": null,
+    "licenseInfo": null,
+    "listed": false,
+    "modified": 1594219442000,
+    "name": "Drawing_Index.zip",
+    "numComments": 0,
+    "numRatings": 0,
+    "numViews": 0,
+    "orgId": "WN5coiM8DFAUrNQ2",
+    "owner": "jgg513_uoy",
+    "ownerFolder": "f1e63d93912c42fb8104a345dc3e8349",
+    "properties": null,
+    "protected": false,
+    "proxyFilter": null,
+    "scoreCompleteness": 41,
+    "screenshots": [
+    ],
+    "size": 60622,
+    "snippet": null,
+    "spatialReference": null,
+    "tags": [
+    ],
+    "thumbnail": "thumbnail/Drawing_Index.png",
+    "title": "Drawing Index",
+    "type": "Form",
+    "typeKeywords": [
+        "Form",
+        "Survey123",
+        "Survey123 Connect",
+        "xForm"
+    ],
+    "url": null
+}

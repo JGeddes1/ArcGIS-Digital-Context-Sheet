@@ -1,0 +1,115 @@
+{
+  "form": "<form autocomplete=\"off\" novalidate=\"novalidate\" class=\"or clearfix\" dir=\"ltr\" id=\"Photo_Register\">\n<!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSL stylesheet created by Enketo LLC.--><section class=\"form-logo\"> </section><h3 dir=\"auto\" id=\"form-title\">My Survey</h3>\n  \n  \n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Photo Number</span><input type=\"text\" name=\"/Photo_Register/Photo_Number\" data-type-xml=\"string\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Date</span><input type=\"date\" name=\"/Photo_Register/Date_Photo\" data-type-xml=\"date\"/></label>\n  \n<fieldset id=\"or-calculated-items\" style=\"display:none;\"><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/Photo_Register/meta/instanceID\" data-calculate=\"concat('uuid:', uuid())\" data-type-xml=\"string\"/></label></fieldset></form>",
+  "languageMap": {},
+  "model": "<model><instance>\n        <Photo_Register xmlns:esri=\"http://esri.com/xforms\" xmlns:jr=\"http://openrosa.org/javarosa\" xmlns:odk=\"http://www.opendatakit.org/xforms\" xmlns:orx=\"http://openrosa.org/xforms\" id=\"Photo_Register\">\n          <Photo_Number/>\n          <Date_Photo/>\n          <meta>\n            <instanceID/>\n          </meta>\n        </Photo_Register>\n      </instance></model>",
+  "success": true,
+  "surveyFormJson": {
+    "footer": {
+      "content": "",
+      "isVisible": true
+    },
+    "header": {
+      "content": "%3Cp%20title%3D'My%20Survey'%3EMy%20Survey%3C%2Fp%3E",
+      "isVisible": true
+    },
+    "layerName": "Photo_Register",
+    "portalUrl": "https://www.arcgis.com",
+    "questions": [
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Photo_Number",
+        "id": "/Photo_Register/Photo_Number",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Photo Number",
+        "name": "Photo_Number",
+        "position": 0,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "appearance": {
+          "layout": "day-month-year"
+        },
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Date_Photo",
+        "id": "/Photo_Register/Date_Photo",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Date",
+        "name": "Date_Photo",
+        "position": 1,
+        "type": "esriQuestionTypeDate",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      }
+    ],
+    "rules": [],
+    "settings": {
+      "draftInfo": {
+        "isEnabled": false
+      },
+      "instanceName": null,
+      "isVersionLocked": true,
+      "multiSubmissionInfo": {
+        "maxAllowed": 0,
+        "showSubmitAnotherTip": false
+      },
+      "notificationsInfo": {},
+      "openStatusInfo": {
+        "closedStatusContent": "",
+        "schedule": {
+          "end": null,
+          "start": null
+        },
+        "status": "open"
+      },
+      "recordStartEndTime": {
+        "fieldInfos": [],
+        "isEnabled": false
+      },
+      "thankYouScreenContent": ""
+    },
+    "subHeader": {
+      "content": "",
+      "isVisible": true
+    },
+    "submit": {
+      "buttonText": ""
+    },
+    "themes": [
+      {
+        "form": {
+          "backgroundColor": "#ffffff",
+          "backgroundOpacity": 1,
+          "inputBackgroundColor": "#ffffff",
+          "inputTextColor": "#505050",
+          "primaryColor": "#31872E",
+          "primaryTextColor": "#ffffff",
+          "textColor": "#505050"
+        },
+        "header": {
+          "backgroundColor": "#31872E",
+          "textColor": "#ffffff"
+        },
+        "id": null,
+        "isEnabled": true,
+        "name": "theme-color1",
+        "webpage": {
+          "backgroundColor": "#B7DCC7"
+        }
+      }
+    ],
+    "version": "3.10"
+  },
+  "transformerVersion": "1.37.0"
+}

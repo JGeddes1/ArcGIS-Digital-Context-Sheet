@@ -1,0 +1,58 @@
+{
+    "access": "private",
+    "accessInformation": null,
+    "appCategories": [
+    ],
+    "avgRating": 0,
+    "banner": null,
+    "categories": [
+    ],
+    "commentsEnabled": true,
+    "created": 1594142581000,
+    "culture": "en-gb",
+    "description": "\n<p style='-qt-paragraph-type:empty; margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;'><br /></p>",
+    "documentation": null,
+    "extent": [
+    ],
+    "groupDesignations": null,
+    "guid": null,
+    "id": "9faeccb44ee74a5fb18aec2aedec8554",
+    "industries": [
+    ],
+    "isOrgItem": true,
+    "itemControl": "admin",
+    "languages": [
+    ],
+    "largeThumbnail": null,
+    "licenseInfo": null,
+    "listed": false,
+    "modified": 1594551712000,
+    "name": "Photo_Register_FS.zip",
+    "numComments": 0,
+    "numRatings": 0,
+    "numViews": 5,
+    "orgId": "WN5coiM8DFAUrNQ2",
+    "owner": "jgg513_uoy",
+    "ownerFolder": "240ff51ef1334ae6b76ef57fcb023dab",
+    "properties": null,
+    "protected": false,
+    "proxyFilter": null,
+    "scoreCompleteness": 43,
+    "screenshots": [
+    ],
+    "size": 43641,
+    "snippet": "photo register",
+    "spatialReference": null,
+    "tags": [
+    ],
+    "thumbnail": "thumbnail/Photo_Register_FS.png",
+    "title": "Photo Register Form",
+    "type": "Form",
+    "typeKeywords": [
+        "Form",
+        "Survey123",
+        "Survey123 Connect",
+        "xForm"
+    ],
+    "url": null
+}

@@ -1,0 +1,61 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:esri="http://esri.com/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Photo Records</h:title>
+    <model>
+      <submission action="https://www.arcgis.com/sharing/rest/content/items/98b796dff0aa44cbabeb65910a062cff" method="form-data-post"/>
+      <instance>
+        <Photo_Records_fs id="Photo_Records">
+          <Camera_Number/>
+          <Photo_Group/>
+          <Photo_Number/>
+          <Dates/>
+          <Context_Number/>
+          <Description/>
+          <Notes/>
+          <Orientation/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </Photo_Records_fs>
+      </instance>
+      <bind esri:fieldType="esriFieldTypeInteger" nodeset="/Photo_Records_fs/Camera_Number" type="int"/>
+      <bind esri:fieldType="esriFieldTypeInteger" nodeset="/Photo_Records_fs/Photo_Group" type="int"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Photo_Records_fs/Photo_Number" type="string"/>
+      <bind calculate="today()" esri:fieldType="esriFieldTypeDate" nodeset="/Photo_Records_fs/Dates" type="dateTime"/>
+      <bind esri:fieldType="esriFieldTypeInteger" nodeset="/Photo_Records_fs/Context_Number" type="int"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Photo_Records_fs/Description" type="string"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Photo_Records_fs/Notes" type="string"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Photo_Records_fs/Orientation" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Photo_Records_fs/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Photo_Records_fs/Camera_Number">
+      <label>Camera Number</label>
+    </input>
+    <input ref="/Photo_Records_fs/Photo_Group">
+      <label>Group</label>
+    </input>
+    <input ref="/Photo_Records_fs/Photo_Number">
+      <label>Photo Number</label>
+      <hint>e.g DSC - 0028</hint>
+    </input>
+    <input ref="/Photo_Records_fs/Dates">
+      <label>Date</label>
+    </input>
+    <input ref="/Photo_Records_fs/Context_Number">
+      <label>Context Number</label>
+    </input>
+    <input ref="/Photo_Records_fs/Description">
+      <label>Description</label>
+    </input>
+    <input ref="/Photo_Records_fs/Notes">
+      <label>Notes</label>
+    </input>
+    <input ref="/Photo_Records_fs/Orientation">
+      <label>Orientation</label>
+      <hint>e.g NE, SW, E</hint>
+    </input>
+  </h:body>
+</h:html>

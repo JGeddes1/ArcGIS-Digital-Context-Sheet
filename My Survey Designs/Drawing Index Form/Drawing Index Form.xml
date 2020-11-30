@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:esri="http://esri.com/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>My Survey</h:title>
+    <model>
+      <instance>
+        <Drawing_Index_Form id="Drawing_Index_Form">
+          <drawing_number/>
+          <_group/>
+          <trench/>
+          <context_number/>
+          <description/>
+          <_scale/>
+          <notes/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </Drawing_Index_Form>
+      </instance>
+      <bind nodeset="/Drawing_Index_Form/drawing_number" type="string"/>
+      <bind nodeset="/Drawing_Index_Form/_group" type="int"/>
+      <bind nodeset="/Drawing_Index_Form/trench" type="int"/>
+      <bind nodeset="/Drawing_Index_Form/context_number" type="int"/>
+      <bind nodeset="/Drawing_Index_Form/description" type="string"/>
+      <bind nodeset="/Drawing_Index_Form/_scale" type="string"/>
+      <bind nodeset="/Drawing_Index_Form/notes" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Drawing_Index_Form/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Drawing_Index_Form/drawing_number">
+      <label>Drawing Number</label>
+    </input>
+    <input ref="/Drawing_Index_Form/_group">
+      <label>Group</label>
+    </input>
+    <input ref="/Drawing_Index_Form/trench">
+      <label>Trench</label>
+    </input>
+    <input ref="/Drawing_Index_Form/context_number">
+      <label>Context Number</label>
+    </input>
+    <input ref="/Drawing_Index_Form/description">
+      <label>Description</label>
+    </input>
+    <input ref="/Drawing_Index_Form/_scale">
+      <label>Scale</label>
+      <hint>e.g 1:20</hint>
+    </input>
+    <input ref="/Drawing_Index_Form/notes">
+      <label>Notes</label>
+    </input>
+  </h:body>
+</h:html>

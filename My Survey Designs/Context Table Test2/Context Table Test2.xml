@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:esri="http://esri.com/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>My Survey</h:title>
+    <model>
+      <instance>
+        <Context_Table_Test2 id="Context_Table_Test2">
+          <example/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </Context_Table_Test2>
+      </instance>
+      <bind nodeset="/Context_Table_Test2/example" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Context_Table_Test2/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Context_Table_Test2/example">
+      <label>Example</label>
+    </input>
+  </h:body>
+</h:html>

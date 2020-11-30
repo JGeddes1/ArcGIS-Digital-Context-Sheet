@@ -1,0 +1,58 @@
+{
+    "access": "private",
+    "accessInformation": null,
+    "appCategories": [
+    ],
+    "avgRating": 0,
+    "banner": null,
+    "categories": [
+    ],
+    "commentsEnabled": true,
+    "created": 1594119901000,
+    "culture": "en-gb",
+    "description": "This template includes all XLSForm features supported in ArcGIS Survey123.",
+    "documentation": null,
+    "extent": [
+    ],
+    "groupDesignations": null,
+    "guid": null,
+    "id": "d4bff254e3fe4f47b96f1a501c038aec",
+    "industries": [
+    ],
+    "isOrgItem": true,
+    "itemControl": "admin",
+    "languages": [
+    ],
+    "largeThumbnail": null,
+    "licenseInfo": null,
+    "listed": false,
+    "modified": 1594119902000,
+    "name": "Context_Sheets.zip",
+    "numComments": 0,
+    "numRatings": 0,
+    "numViews": 0,
+    "orgId": "WN5coiM8DFAUrNQ2",
+    "owner": "jgg513_uoy",
+    "ownerFolder": "cebc77c1c1e64151a7260aec9881986a",
+    "properties": null,
+    "protected": false,
+    "proxyFilter": null,
+    "scoreCompleteness": 41,
+    "screenshots": [
+    ],
+    "size": 69989,
+    "snippet": null,
+    "spatialReference": null,
+    "tags": [
+    ],
+    "thumbnail": "thumbnail/Context_Sheets.png",
+    "title": "Context Sheets",
+    "type": "Form",
+    "typeKeywords": [
+        "Form",
+        "Survey123",
+        "Survey123 Connect",
+        "xForm"
+    ],
+    "url": null
+}

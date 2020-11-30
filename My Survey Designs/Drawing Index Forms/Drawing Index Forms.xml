@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:esri="http://esri.com/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Drawing Index</h:title>
+    <model>
+      <submission action="https://www.arcgis.com/sharing/rest/content/items/e1816875fca54ea1aa07f3c6f6b1c7d8" method="form-data-post"/>
+      <instance>
+        <Drawing_Index_Forms id="Drawing_Index">
+          <Drawing_Number/>
+          <Group_Drawing/>
+          <Trench/>
+          <Context_Number/>
+          <Description/>
+          <Scale_Drawing/>
+          <Notes/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </Drawing_Index_Forms>
+      </instance>
+      <bind esri:fieldType="esriFieldTypeString" nodeset="/Drawing_Index_Forms/Drawing_Number" type="string"/>
+      <bind esri:fieldType="esriFieldTypeInteger" nodeset="/Drawing_Index_Forms/Group_Drawing" type="int"/>
+      <bind esri:fieldType="esriFieldTypeInteger" nodeset="/Drawing_Index_Forms/Trench" type="int"/>
+      <bind esri:fieldType="esriFieldTypeInteger" nodeset="/Drawing_Index_Forms/Context_Number" type="int"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Drawing_Index_Forms/Description" type="string"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Drawing_Index_Forms/Scale_Drawing" type="string"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Drawing_Index_Forms/Notes" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Drawing_Index_Forms/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Drawing_Index_Forms/Drawing_Number">
+      <label>Drawing Number</label>
+    </input>
+    <input ref="/Drawing_Index_Forms/Group_Drawing">
+      <label>Group</label>
+    </input>
+    <input ref="/Drawing_Index_Forms/Trench">
+      <label>Trench</label>
+    </input>
+    <input ref="/Drawing_Index_Forms/Context_Number">
+      <label>Context Number</label>
+    </input>
+    <input ref="/Drawing_Index_Forms/Description">
+      <label>Description</label>
+      <hint>section of plan (etc.)</hint>
+    </input>
+    <input ref="/Drawing_Index_Forms/Scale_Drawing">
+      <label>Scale Drawing</label>
+      <hint>e.g 01:20</hint>
+    </input>
+    <input ref="/Drawing_Index_Forms/Notes">
+      <label>Notes</label>
+    </input>
+  </h:body>
+</h:html>

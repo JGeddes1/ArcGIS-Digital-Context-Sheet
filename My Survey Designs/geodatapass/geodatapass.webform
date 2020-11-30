@@ -1,0 +1,96 @@
+{
+  "form": "<form autocomplete=\"off\" novalidate=\"novalidate\" class=\"or clearfix\" dir=\"ltr\" id=\"geodatapass\">\n<!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSL stylesheet created by Enketo LLC.--><section class=\"form-logo\"> </section><h3 dir=\"auto\" id=\"form-title\">My Survey</h3>\n  \n  \n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">shape</span><input type=\"text\" name=\"/geodatapass/shapes\" data-type-xml=\"geoshape\"/></label>\n  \n<fieldset id=\"or-calculated-items\" style=\"display:none;\"><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/geodatapass/meta/instanceID\" data-calculate=\"concat('uuid:', uuid())\" data-type-xml=\"string\"/></label></fieldset></form>",
+  "languageMap": {},
+  "model": "<model><instance>\n        <geodatapass xmlns:esri=\"http://esri.com/xforms\" xmlns:jr=\"http://openrosa.org/javarosa\" xmlns:odk=\"http://www.opendatakit.org/xforms\" xmlns:orx=\"http://openrosa.org/xforms\" id=\"geodatapass\">\n          <shapes/>\n          <meta>\n            <instanceID/>\n          </meta>\n        </geodatapass>\n      </instance></model>",
+  "success": true,
+  "surveyFormJson": {
+    "footer": {
+      "content": "",
+      "isVisible": true
+    },
+    "header": {
+      "content": "%3Cp%20title%3D'My%20Survey'%3EMy%20Survey%3C%2Fp%3E",
+      "isVisible": true
+    },
+    "layerName": "geodatapass",
+    "portalUrl": "https://www.arcgis.com",
+    "questions": [
+      {
+        "calculation": "",
+        "defaultExtent": {
+          "spatialReference": {}
+        },
+        "id": "/geodatapass/shapes",
+        "inputTools": [
+          "vertex"
+        ],
+        "isDeviceLocationRequired": false,
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "shape",
+        "maps": [],
+        "name": "shapes",
+        "position": 0,
+        "type": "esriQuestionTypePolygon"
+      }
+    ],
+    "rules": [],
+    "settings": {
+      "draftInfo": {
+        "isEnabled": false
+      },
+      "instanceName": null,
+      "isVersionLocked": true,
+      "multiSubmissionInfo": {
+        "maxAllowed": 0,
+        "showSubmitAnotherTip": false
+      },
+      "notificationsInfo": {},
+      "openStatusInfo": {
+        "closedStatusContent": "",
+        "schedule": {
+          "end": null,
+          "start": null
+        },
+        "status": "open"
+      },
+      "recordStartEndTime": {
+        "fieldInfos": [],
+        "isEnabled": false
+      },
+      "thankYouScreenContent": ""
+    },
+    "subHeader": {
+      "content": "",
+      "isVisible": true
+    },
+    "submit": {
+      "buttonText": ""
+    },
+    "themes": [
+      {
+        "form": {
+          "backgroundColor": "#ffffff",
+          "backgroundOpacity": 1,
+          "inputBackgroundColor": "#ffffff",
+          "inputTextColor": "#505050",
+          "primaryColor": "#31872E",
+          "primaryTextColor": "#ffffff",
+          "textColor": "#505050"
+        },
+        "header": {
+          "backgroundColor": "#31872E",
+          "textColor": "#ffffff"
+        },
+        "id": null,
+        "isEnabled": true,
+        "name": "theme-color1",
+        "webpage": {
+          "backgroundColor": "#B7DCC7"
+        }
+      }
+    ],
+    "version": "3.9"
+  },
+  "transformerVersion": "1.35.0"
+}

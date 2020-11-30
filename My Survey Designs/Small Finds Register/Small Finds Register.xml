@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:esri="http://esri.com/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>My Survey</h:title>
+    <model>
+      <instance>
+        <Small_Finds_Register id="Small_Finds_Register">
+          <GenID/>
+          <MachID/>
+          <X/>
+          <Y/>
+          <Z/>
+          <CODE/>
+          <Notes/>
+          <Small_Finds_Number/>
+          <Surveyed/>
+          <Survey_no_reasoning/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </Small_Finds_Register>
+      </instance>
+      <bind nodeset="/Small_Finds_Register/GenID" type="int"/>
+      <bind nodeset="/Small_Finds_Register/MachID" type="int"/>
+      <bind nodeset="/Small_Finds_Register/X" type="int"/>
+      <bind nodeset="/Small_Finds_Register/Y" type="int"/>
+      <bind nodeset="/Small_Finds_Register/Z" type="int"/>
+      <bind nodeset="/Small_Finds_Register/CODE" type="string"/>
+      <bind nodeset="/Small_Finds_Register/Notes" type="string"/>
+      <bind nodeset="/Small_Finds_Register/Small_Finds_Number" type="int"/>
+      <bind nodeset="/Small_Finds_Register/Surveyed" type="select1"/>
+      <bind nodeset="/Small_Finds_Register/Survey_no_reasoning" relevant=" /Small_Finds_Register/Surveyed  = 'no'" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Small_Finds_Register/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Small_Finds_Register/GenID">
+      <label>GenID</label>
+    </input>
+    <input ref="/Small_Finds_Register/MachID">
+      <label>MachID</label>
+    </input>
+    <input ref="/Small_Finds_Register/X">
+      <label>X</label>
+    </input>
+    <input ref="/Small_Finds_Register/Y">
+      <label>Y</label>
+    </input>
+    <input ref="/Small_Finds_Register/Z">
+      <label>Z</label>
+    </input>
+    <input ref="/Small_Finds_Register/CODE">
+      <label>CODE</label>
+    </input>
+    <input ref="/Small_Finds_Register/Notes">
+      <label>Notes</label>
+    </input>
+    <input ref="/Small_Finds_Register/Small_Finds_Number">
+      <label>Small Finds Number</label>
+    </input>
+    <select1 ref="/Small_Finds_Register/Surveyed">
+      <label>Surveyed?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <input ref="/Small_Finds_Register/Survey_no_reasoning">
+      <label>Why not?</label>
+    </input>
+  </h:body>
+</h:html>

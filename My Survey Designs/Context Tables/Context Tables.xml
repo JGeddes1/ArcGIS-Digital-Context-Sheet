@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:esri="http://esri.com/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>My Survey</h:title>
+    <model>
+      <instance>
+        <Context_Tables id="Context_Tables">
+          <Context_Sheet jr:template="">
+            <Site_Code/>
+            <Context_Number/>
+          </Context_Sheet>
+          <Context_Index jr:template="">
+            <Context_Number/>
+            <Context_Group/>
+            <Context_Drawing/>
+            <Context_Samples/>
+            <Context_Photo_Number/>
+            <Context_Type/>
+            <Context_Description/>
+            <Context_Notes/>
+          </Context_Index>
+          <meta>
+            <instanceID/>
+          </meta>
+        </Context_Tables>
+      </instance>
+      <bind nodeset="/Context_Tables/Context_Sheet/Site_Code" type="string"/>
+      <bind nodeset="/Context_Tables/Context_Sheet/Context_Number" type="int"/>
+      <bind nodeset="/Context_Tables/Context_Index/Context_Number" type="int"/>
+      <bind nodeset="/Context_Tables/Context_Index/Context_Group" type="int"/>
+      <bind nodeset="/Context_Tables/Context_Index/Context_Drawing" type="string"/>
+      <bind nodeset="/Context_Tables/Context_Index/Context_Samples" type="string"/>
+      <bind nodeset="/Context_Tables/Context_Index/Context_Photo_Number" type="int"/>
+      <bind nodeset="/Context_Tables/Context_Index/Context_Type" type="select1"/>
+      <bind nodeset="/Context_Tables/Context_Index/Context_Description" type="string"/>
+      <bind nodeset="/Context_Tables/Context_Index/Context_Notes" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Context_Tables/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <group ref="/Context_Tables/Context_Sheet">
+      <label>Context Sheet</label>
+      <repeat nodeset="/Context_Tables/Context_Sheet">
+        <input ref="/Context_Tables/Context_Sheet/Site_Code">
+          <label>Site Code</label>
+        </input>
+        <input ref="/Context_Tables/Context_Sheet/Context_Number">
+          <label>Context Number</label>
+        </input>
+      </repeat>
+    </group>
+    <group ref="/Context_Tables/Context_Index">
+      <label>Context Index</label>
+      <repeat nodeset="/Context_Tables/Context_Index">
+        <input ref="/Context_Tables/Context_Index/Context_Number">
+          <label>Context Number</label>
+        </input>
+        <input ref="/Context_Tables/Context_Index/Context_Group">
+          <label>Group</label>
+        </input>
+        <input ref="/Context_Tables/Context_Index/Context_Drawing">
+          <label>Drawing</label>
+        </input>
+        <input ref="/Context_Tables/Context_Index/Context_Samples">
+          <label>Samples</label>
+        </input>
+        <input ref="/Context_Tables/Context_Index/Context_Photo_Number">
+          <label>Photo Number</label>
+        </input>
+        <select1 ref="/Context_Tables/Context_Index/Context_Type">
+          <label>Type</label>
+          <item>
+            <label>Cut</label>
+            <value>Cut</value>
+          </item>
+          <item>
+            <label>Fill</label>
+            <value>Fill</value>
+          </item>
+        </select1>
+        <input ref="/Context_Tables/Context_Index/Context_Description">
+          <label>Description</label>
+        </input>
+        <input ref="/Context_Tables/Context_Index/Context_Notes">
+          <label>Notes</label>
+        </input>
+      </repeat>
+    </group>
+  </h:body>
+</h:html>

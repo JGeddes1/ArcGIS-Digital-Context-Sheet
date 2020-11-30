@@ -1,0 +1,1196 @@
+{
+  "form": "<form autocomplete=\"off\" novalidate=\"novalidate\" class=\"or clearfix\" dir=\"ltr\" id=\"Context_Sheets\" action=\"https://www.arcgis.com/sharing/rest/content/items/98b796dff0aa44cbabeb65910a062cff\" method=\"post\">\n<!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSL stylesheet created by Enketo LLC.--><section class=\"form-logo\"> </section><h3 dir=\"auto\" id=\"form-title\">Context Sheets</h3><select id=\"form-languages\" style=\"display:none;\" data-default-lang=\"default\"><option value=\"default\" data-dir=\"ltr\">default</option> </select>\n  \n  \n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Site Code</span><input type=\"text\" name=\"/Context_Sheet_FS/Site_Code\" data-type-xml=\"string\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Context Number</span><input type=\"number\" name=\"/Context_Sheet_FS/Context_Number\" data-type-xml=\"int\"/></label>\n    <fieldset class=\"question simple-select \"><fieldset><legend><span lang=\"\" class=\"question-label active\">Context Type</span>\n                    </legend><div class=\"option-wrapper\"><label class=\"\"><input type=\"radio\" name=\"/Context_Sheet_FS/Context_Types\" data-name=\"/Context_Sheet_FS/Context_Types\" value=\"cut\" data-type-xml=\"select1\"/><span lang=\"\" class=\"option-label active\">cut</span></label><label class=\"\"><input type=\"radio\" name=\"/Context_Sheet_FS/Context_Types\" data-name=\"/Context_Sheet_FS/Context_Types\" value=\"fill\" data-type-xml=\"select1\"/><span lang=\"\" class=\"option-label active\">fill</span></label><label class=\"\"><input type=\"radio\" name=\"/Context_Sheet_FS/Context_Types\" data-name=\"/Context_Sheet_FS/Context_Types\" value=\"other\" data-type-xml=\"select1\"/><span lang=\"\" class=\"option-label active\">other</span></label></div></fieldset></fieldset>\n    <label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Colour</span><input type=\"text\" name=\"/Context_Sheet_FS/Colour\" data-relevant=\" /Context_Sheet_FS/Context_Types  = 'fill'\" data-type-xml=\"string\"/></label>\n    <label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Composition</span><input type=\"text\" name=\"/Context_Sheet_FS/Composition\" data-relevant=\" /Context_Sheet_FS/Context_Types  = 'fill'\" data-type-xml=\"string\"/></label>\n    <label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Compaction</span><input type=\"text\" name=\"/Context_Sheet_FS/Compaction\" data-relevant=\" /Context_Sheet_FS/Context_Types  = 'fill'\" data-type-xml=\"string\"/></label>\n    <label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Thickness</span><input type=\"text\" name=\"/Context_Sheet_FS/Thickness\" data-relevant=\" /Context_Sheet_FS/Context_Types  = 'fill'\" data-type-xml=\"string\"/></label>\n    <label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Other information and comments</span><input type=\"text\" name=\"/Context_Sheet_FS/Other_Info_fill\" data-relevant=\" /Context_Sheet_FS/Context_Types  = 'fill'\" data-type-xml=\"string\"/></label>\n    <label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Shape in plan</span><input type=\"text\" name=\"/Context_Sheet_FS/Shape_in_Plan\" data-relevant=\" /Context_Sheet_FS/Context_Types  = 'cut'\" data-type-xml=\"string\"/></label>\n    <label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Orientation</span><input type=\"text\" name=\"/Context_Sheet_FS/Orientation\" data-relevant=\" /Context_Sheet_FS/Context_Types  = 'cut'\" data-type-xml=\"string\"/></label>\n    <label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Corners in plan</span><input type=\"text\" name=\"/Context_Sheet_FS/Corners_in_plan\" data-relevant=\" /Context_Sheet_FS/Context_Types  = 'cut'\" data-type-xml=\"string\"/></label>\n    <label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Break in slope-top</span><input type=\"text\" name=\"/Context_Sheet_FS/Break_slope_top\" data-relevant=\" /Context_Sheet_FS/Context_Types  = 'cut'\" data-type-xml=\"string\"/></label>\n    <label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Depth</span><input type=\"text\" name=\"/Context_Sheet_FS/Context_Depth\" data-relevant=\" /Context_Sheet_FS/Context_Types  = 'cut'\" data-type-xml=\"string\"/></label>\n    <label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Nature of sides</span><input type=\"text\" name=\"/Context_Sheet_FS/Nature_sides\" data-relevant=\" /Context_Sheet_FS/Context_Types  = 'cut'\" data-type-xml=\"string\"/></label>\n    <label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Break of slope-base</span><input type=\"text\" name=\"/Context_Sheet_FS/Break_slope_base\" data-relevant=\" /Context_Sheet_FS/Context_Types  = 'cut'\" data-type-xml=\"string\"/></label>\n    <label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Nature of base</span><input type=\"text\" name=\"/Context_Sheet_FS/Nature_base\" data-relevant=\" /Context_Sheet_FS/Context_Types  = 'cut'\" data-type-xml=\"string\"/></label>\n    <label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Other information and comments</span><input type=\"text\" name=\"/Context_Sheet_FS/Other_Info_cut\" data-relevant=\" /Context_Sheet_FS/Context_Types  = 'cut'\" data-type-xml=\"string\"/></label>\n    <section class=\"or-group or-appearance-compact \" name=\"/Context_Sheet_FS/Harris_Matrix\"><h4><span lang=\"\" class=\"question-label active\">Harris Matrix</span></h4><section class=\"or-repeat or-appearance-compact \" name=\"/Context_Sheet_FS/Harris_Matrix\"><fieldset class=\"question simple-select or-appearance-image-map \"><fieldset><legend><span lang=\"default\" class=\"question-label active\" data-itext-id=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphy:label\">Stratigraphy</span><img lang=\"default\" class=\"active\" src=\"jr://images/Stratigraphy.svg\" data-itext-id=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphy:label\" alt=\"image\"/><span lang=\"\" class=\"or-hint active\">Click on the boxes to add a stratigraphic point</span>\n                    </legend><div class=\"option-wrapper\"><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphy\" value=\"Centre\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Centre</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphy\" value=\"Above\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Above</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphy\" value=\"Below\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Below</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphy\" value=\"Above_Far_Right\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Above_Far_Right</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphy\" value=\"Above_Right\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Above_Right</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphy\" value=\"Above_Far_Left\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Above_Far_Left</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphy\" value=\"Above_Left\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Above_Left</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphy\" value=\"Below_Far_Right\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Below_Far_Right</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphy\" value=\"Below_Right\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Below_Right</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphy\" value=\"Below_Far_Left\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Below_Far_Left</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphy\" value=\"Below_Left\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Below_Left</span></label></div></fieldset></fieldset><label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Centre Number</span><input type=\"text\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Context\" data-relevant=\"selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Centre')\" data-type-xml=\"string\"/></label><label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Above Middle Number</span><input type=\"text\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Middle\" data-relevant=\"selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Above')\" data-type-xml=\"string\"/></label><label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Above Left Number</span><input type=\"text\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Left\" data-relevant=\"selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Above_Left')\" data-type-xml=\"string\"/></label><label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Above Far Left Number</span><input type=\"text\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Far_Left\" data-relevant=\"selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Above_Far_Left')\" data-type-xml=\"string\"/></label><label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Above Right Number</span><input type=\"text\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Right\" data-relevant=\"selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Above_Right')\" data-type-xml=\"string\"/></label><label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Above Far Right Number</span><input type=\"text\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Far_Right\" data-relevant=\"selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Above_Far_Right')\" data-type-xml=\"string\"/></label><label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Below Middle Number</span><input type=\"text\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Middle\" data-relevant=\"selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Below')\" data-type-xml=\"string\"/></label><label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Below Left Number</span><input type=\"text\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Left\" data-relevant=\"selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Below_Left')\" data-type-xml=\"string\"/></label><label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Below Far Left Number</span><input type=\"text\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Far_Left\" data-relevant=\"selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Below_Far_Left')\" data-type-xml=\"string\"/></label><label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Below Right Number</span><input type=\"text\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Right\" data-relevant=\"selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Below_Right')\" data-type-xml=\"string\"/></label><label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Below Far Right Number</span><input type=\"text\" name=\"/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Far_Right\" data-relevant=\"selected( /Context_Sheet_FS/Harris_Matrix/Stratigraphy ,'Below_Far_Right')\" data-type-xml=\"string\"/></label>\n            </section><div class=\"or-repeat-info\" data-name=\"/Context_Sheet_FS/Harris_Matrix\"/>\n            </section><!--end of group -->\n    <section class=\"or-group or-appearance-compact \" name=\"/Context_Sheet_FS/Spatial_Photographic_Info\"><h4><span lang=\"\" class=\"question-label active\">Spatial Photographic Information</span></h4><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Plan Numbers</span><input type=\"number\" name=\"/Context_Sheet_FS/Spatial_Photographic_Info/Plan_Numbers\" data-type-xml=\"int\"/></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Other Drawings</span><input type=\"text\" name=\"/Context_Sheet_FS/Spatial_Photographic_Info/Other_Drawings\" data-type-xml=\"string\"/></label><fieldset class=\"question simple-select \"><fieldset><legend><span lang=\"\" class=\"question-label active\">Photographs</span>\n                    </legend><div class=\"option-wrapper\"><label class=\"\"><input type=\"radio\" name=\"/Context_Sheet_FS/Spatial_Photographic_Info/Photographs\" data-name=\"/Context_Sheet_FS/Spatial_Photographic_Info/Photographs\" value=\"yes\" data-type-xml=\"select1\"/><span lang=\"\" class=\"option-label active\">Yes</span></label><label class=\"\"><input type=\"radio\" name=\"/Context_Sheet_FS/Spatial_Photographic_Info/Photographs\" data-name=\"/Context_Sheet_FS/Spatial_Photographic_Info/Photographs\" value=\"no\" data-type-xml=\"select1\"/><span lang=\"\" class=\"option-label active\">No</span></label></div></fieldset></fieldset><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Photograph Reference Numbers</span><input type=\"text\" name=\"/Context_Sheet_FS/Spatial_Photographic_Info/Photo_ref_number\" data-type-xml=\"string\"/></label>\n            </section><!--end of group -->\n    <section class=\"or-group or-appearance-compact \" name=\"/Context_Sheet_FS/Finds_information\"><h4><span lang=\"\" class=\"question-label active\">Finds information</span></h4><fieldset class=\"question or-appearance-horizontal-compact or-appearance-columns-pack \"><fieldset><legend><span lang=\"\" class=\"question-label active\">Artefacts Present</span>\n                    </legend><div class=\"option-wrapper\"><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Finds_information/Artefact_Present_Finds\" value=\"Pot\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Pot</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Finds_information/Artefact_Present_Finds\" value=\"Tile\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Tile</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Finds_information/Artefact_Present_Finds\" value=\"Brick\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Brick</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Finds_information/Artefact_Present_Finds\" value=\"Bone\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Bone</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Finds_information/Artefact_Present_Finds\" value=\"Seed\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Seed</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Finds_information/Artefact_Present_Finds\" value=\"Metal\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Metal</span></label></div></fieldset></fieldset><fieldset class=\"question or-appearance-horizontal-compact or-appearance-columns-pack \"><fieldset><legend><span lang=\"\" class=\"question-label active\">Collection Keyword</span>\n                    </legend><div class=\"option-wrapper\"><label class=\"\"><input type=\"radio\" name=\"/Context_Sheet_FS/Finds_information/Artefact_Present_Collection\" data-name=\"/Context_Sheet_FS/Finds_information/Artefact_Present_Collection\" value=\"All\" data-type-xml=\"select1\"/><span lang=\"\" class=\"option-label active\">All</span></label><label class=\"\"><input type=\"radio\" name=\"/Context_Sheet_FS/Finds_information/Artefact_Present_Collection\" data-name=\"/Context_Sheet_FS/Finds_information/Artefact_Present_Collection\" value=\"Some\" data-type-xml=\"select1\"/><span lang=\"\" class=\"option-label active\">Some</span></label><label class=\"\"><input type=\"radio\" name=\"/Context_Sheet_FS/Finds_information/Artefact_Present_Collection\" data-name=\"/Context_Sheet_FS/Finds_information/Artefact_Present_Collection\" value=\"None\" data-type-xml=\"select1\"/><span lang=\"\" class=\"option-label active\">None</span></label></div></fieldset></fieldset><fieldset class=\"question or-appearance-horizontal-compact or-appearance-columns-pack \"><fieldset><legend><span lang=\"\" class=\"question-label active\">Samples taken</span>\n                    </legend><div class=\"option-wrapper\"><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Finds_information/Samples_taken\" value=\"Bulk\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Bulk</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Finds_information/Samples_taken\" value=\"Char\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Char</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Finds_information/Samples_taken\" value=\"C14\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">C14</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Finds_information/Samples_taken\" value=\"Dendr\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Dendr</span></label><label class=\"\"><input type=\"checkbox\" name=\"/Context_Sheet_FS/Finds_information/Samples_taken\" value=\"Other\" data-type-xml=\"select\"/><span lang=\"\" class=\"option-label active\">Other</span></label></div></fieldset></fieldset><label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Number of Bulk bags</span><input type=\"number\" name=\"/Context_Sheet_FS/Finds_information/no_bags_Bulk\" data-relevant=\"selected( /Context_Sheet_FS/Finds_information/Samples_taken ,'Bulk')\" data-type-xml=\"int\"/></label><label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Number of Char bags</span><input type=\"number\" name=\"/Context_Sheet_FS/Finds_information/no_bags_Char\" data-relevant=\"selected( /Context_Sheet_FS/Finds_information/Samples_taken ,'Char')\" data-type-xml=\"int\"/></label><label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Number of C14 bags</span><input type=\"number\" name=\"/Context_Sheet_FS/Finds_information/no_bags_C14\" data-relevant=\"selected( /Context_Sheet_FS/Finds_information/Samples_taken ,'C14')\" data-type-xml=\"int\"/></label><label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Number of Dendr bags</span><input type=\"number\" name=\"/Context_Sheet_FS/Finds_information/no_bags_Dendr\" data-relevant=\"selected( /Context_Sheet_FS/Finds_information/Samples_taken ,'Dendr')\" data-type-xml=\"int\"/></label><label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Number of Other bags</span><input type=\"number\" name=\"/Context_Sheet_FS/Finds_information/no_bags_Other\" data-relevant=\"selected( /Context_Sheet_FS/Finds_information/Samples_taken ,'Other')\" data-type-xml=\"int\"/></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Initials</span><input type=\"text\" name=\"/Context_Sheet_FS/Finds_information/Initials\" data-type-xml=\"string\"/></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Checked &amp; Date</span><input type=\"datetime-local\" name=\"/Context_Sheet_FS/Finds_information/Checked_Date\" data-calculate=\"today()\" data-type-xml=\"dateTime\"/></label>\n            </section><!--end of group -->\n    <section class=\"or-group or-appearance-compact \" name=\"/Context_Sheet_FS/Interpretative_Info\"><h4><span lang=\"\" class=\"question-label active\">Interpretative Information</span></h4><label class=\"question non-select or-appearance-multiline \"><span lang=\"\" class=\"question-label active\">Functional Interpretation and Other Comments</span><textarea name=\"/Context_Sheet_FS/Interpretative_Info/Functional_Interp_and_comments\" data-type-xml=\"string\"> </textarea></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Provisional Date</span><input type=\"date\" name=\"/Context_Sheet_FS/Interpretative_Info/Provisional_Date\" data-calculate=\"today()\" data-type-xml=\"date\"/></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Phasing/Grouping</span><input type=\"text\" name=\"/Context_Sheet_FS/Interpretative_Info/Phasing_Grouping\" data-type-xml=\"string\"/></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Initials</span><input type=\"text\" name=\"/Context_Sheet_FS/Interpretative_Info/Initials_Interp\" data-type-xml=\"string\"/></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Date</span><input type=\"date\" name=\"/Context_Sheet_FS/Interpretative_Info/Finish_Date\" data-calculate=\"today()\" data-type-xml=\"date\"/></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Images</span><input type=\"file\" name=\"/Context_Sheet_FS/Interpretative_Info/Images\" data-type-xml=\"binary\" accept=\"image/*\"/></label>\n            </section><!--end of group -->\n  \n<fieldset id=\"or-calculated-items\" style=\"display:none;\"><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/Context_Sheet_FS/meta/instanceID\" data-calculate=\"concat('uuid:', uuid())\" data-type-xml=\"string\"/></label></fieldset></form>",
+  "languageMap": {},
+  "model": "<model><instance>\n        <Context_Sheet_FS xmlns:esri=\"http://esri.com/xforms\" xmlns:jr=\"http://openrosa.org/javarosa\" xmlns:odk=\"http://www.opendatakit.org/xforms\" xmlns:orx=\"http://openrosa.org/xforms\" id=\"Context_Sheets\">\n          <Site_Code/>\n          <Context_Number/>\n          <Context_Types/>\n          <Colour/>\n          <Composition/>\n          <Compaction/>\n          <Thickness/>\n          <Other_Info_fill/>\n          <Shape_in_Plan/>\n          <Orientation/>\n          <Corners_in_plan/>\n          <Break_slope_top/>\n          <Context_Depth/>\n          <Nature_sides/>\n          <Break_slope_base/>\n          <Nature_base/>\n          <Other_Info_cut/>\n          <Harris_Matrix jr:template=\"\">\n            <Stratigraphy/>\n            <Stratigraphic_Context/>\n            <Stratigraphic_Above_Middle/>\n            <Stratigraphic_Above_Left/>\n            <Stratigraphic_Above_Far_Left/>\n            <Stratigraphic_Above_Right/>\n            <Stratigraphic_Above_Far_Right/>\n            <Stratigraphic_Below_Middle/>\n            <Stratigraphic_Below_Left/>\n            <Stratigraphic_Below_Far_Left/>\n            <Stratigraphic_Below_Right/>\n            <Stratigraphic_Below_Far_Right/>\n          </Harris_Matrix>\n          <Spatial_Photographic_Info>\n            <Plan_Numbers/>\n            <Other_Drawings/>\n            <Photographs/>\n            <Photo_ref_number/>\n          </Spatial_Photographic_Info>\n          <Finds_information>\n            <Artefact_Present_Finds/>\n            <Artefact_Present_Collection/>\n            <Samples_taken/>\n            <no_bags_Bulk/>\n            <no_bags_Char/>\n            <no_bags_C14/>\n            <no_bags_Dendr/>\n            <no_bags_Other/>\n            <Initials/>\n            <Checked_Date/>\n          </Finds_information>\n          <Interpretative_Info>\n            <Functional_Interp_and_comments/>\n            <Provisional_Date/>\n            <Phasing_Grouping/>\n            <Initials_Interp/>\n            <Finish_Date/>\n            <Images/>\n          </Interpretative_Info>\n          <meta>\n            <instanceID/>\n          </meta>\n        </Context_Sheet_FS>\n      </instance></model>",
+  "success": true,
+  "surveyFormJson": {
+    "footer": {
+      "content": "",
+      "isVisible": true
+    },
+    "header": {
+      "content": "%3Cp%20title%3D'Context%20Sheets'%3EContext%20Sheets%3C%2Fp%3E",
+      "isVisible": true
+    },
+    "layerName": "Context_Sheets",
+    "portalUrl": "https://www.arcgis.com",
+    "questions": [
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Site_Code",
+        "id": "/Context_Sheet_FS/Site_Code",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Site Code",
+        "name": "Site_Code",
+        "position": 0,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Context_Number",
+        "id": "/Context_Sheet_FS/Context_Number",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Context Number",
+        "name": "Context_Number",
+        "position": 1,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "appearance": {
+          "layout": "vertical"
+        },
+        "choices": {
+          "items": [
+            {
+              "label": "cut",
+              "position": 0,
+              "value": "cut"
+            },
+            {
+              "label": "fill",
+              "position": 1,
+              "value": "fill"
+            },
+            {
+              "label": "other",
+              "position": 2,
+              "value": "other"
+            }
+          ],
+          "other": {
+            "isEnabled": false
+          }
+        },
+        "choicesOrder": {
+          "type": "default"
+        },
+        "fieldName": "Context_Types",
+        "id": "/Context_Sheet_FS/Context_Types",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Context Type",
+        "name": "Context_Types",
+        "position": 2,
+        "type": "esriQuestionTypeSingleChoice"
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Colour",
+        "id": "/Context_Sheet_FS/Colour",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Colour",
+        "name": "Colour",
+        "position": 3,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Composition",
+        "id": "/Context_Sheet_FS/Composition",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Composition",
+        "name": "Composition",
+        "position": 4,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Compaction",
+        "id": "/Context_Sheet_FS/Compaction",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Compaction",
+        "name": "Compaction",
+        "position": 5,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Thickness",
+        "id": "/Context_Sheet_FS/Thickness",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Thickness",
+        "name": "Thickness",
+        "position": 6,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Other_Info_fill",
+        "id": "/Context_Sheet_FS/Other_Info_fill",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Other information and comments",
+        "name": "Other_Info_fill",
+        "position": 7,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Shape_in_Plan",
+        "id": "/Context_Sheet_FS/Shape_in_Plan",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Shape in plan",
+        "name": "Shape_in_Plan",
+        "position": 8,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Orientation",
+        "id": "/Context_Sheet_FS/Orientation",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Orientation",
+        "name": "Orientation",
+        "position": 9,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Corners_in_plan",
+        "id": "/Context_Sheet_FS/Corners_in_plan",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Corners in plan",
+        "name": "Corners_in_plan",
+        "position": 10,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Break_slope_top",
+        "id": "/Context_Sheet_FS/Break_slope_top",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Break in slope-top",
+        "name": "Break_slope_top",
+        "position": 11,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Context_Depth",
+        "id": "/Context_Sheet_FS/Context_Depth",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Depth",
+        "name": "Context_Depth",
+        "position": 12,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Nature_sides",
+        "id": "/Context_Sheet_FS/Nature_sides",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Nature of sides",
+        "name": "Nature_sides",
+        "position": 13,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Break_slope_base",
+        "id": "/Context_Sheet_FS/Break_slope_base",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Break of slope-base",
+        "name": "Break_slope_base",
+        "position": 14,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Nature_base",
+        "id": "/Context_Sheet_FS/Nature_base",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Nature of base",
+        "name": "Nature_base",
+        "position": 15,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Other_Info_cut",
+        "id": "/Context_Sheet_FS/Other_Info_cut",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Other information and comments",
+        "name": "Other_Info_cut",
+        "position": 16,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "appearance": {
+          "layout": "compact"
+        },
+        "id": "/Context_Sheet_FS/Harris_Matrix",
+        "isRequired": false,
+        "label": "Harris Matrix",
+        "name": "Harris_Matrix",
+        "position": 17,
+        "questions": [
+          {
+            "appearance": {
+              "layout": "image-map"
+            },
+            "choices": {
+              "items": [
+                {
+                  "label": "Centre",
+                  "position": 0,
+                  "value": "Centre"
+                },
+                {
+                  "label": "Above",
+                  "position": 1,
+                  "value": "Above"
+                },
+                {
+                  "label": "Below",
+                  "position": 2,
+                  "value": "Below"
+                },
+                {
+                  "label": "Above_Far_Right",
+                  "position": 3,
+                  "value": "Above_Far_Right"
+                },
+                {
+                  "label": "Above_Right",
+                  "position": 4,
+                  "value": "Above_Right"
+                },
+                {
+                  "label": "Above_Far_Left",
+                  "position": 5,
+                  "value": "Above_Far_Left"
+                },
+                {
+                  "label": "Above_Left",
+                  "position": 6,
+                  "value": "Above_Left"
+                },
+                {
+                  "label": "Below_Far_Right",
+                  "position": 7,
+                  "value": "Below_Far_Right"
+                },
+                {
+                  "label": "Below_Right",
+                  "position": 8,
+                  "value": "Below_Right"
+                },
+                {
+                  "label": "Below_Far_Left",
+                  "position": 9,
+                  "value": "Below_Far_Left"
+                },
+                {
+                  "label": "Below_Left",
+                  "position": 10,
+                  "value": "Below_Left"
+                }
+              ],
+              "other": {
+                "isEnabled": false
+              }
+            },
+            "choicesOrder": {
+              "type": "default"
+            },
+            "fieldName": "Stratigraphy",
+            "id": "/Context_Sheet_FS/Harris_Matrix/Stratigraphy",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Stratigraphy",
+            "name": "Stratigraphy",
+            "position": 18,
+            "type": "esriQuestionTypeMultiChoice",
+            "validation": {
+              "inputCount": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Stratigraphic_Context",
+            "id": "/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Context",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Centre Number",
+            "name": "Stratigraphic_Context",
+            "position": 19,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Stratigraphic_Above_Middle",
+            "id": "/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Middle",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Above Middle Number",
+            "name": "Stratigraphic_Above_Middle",
+            "position": 20,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Stratigraphic_Above_Left",
+            "id": "/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Left",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Above Left Number",
+            "name": "Stratigraphic_Above_Left",
+            "position": 21,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Stratigraphic_Above_Far_Left",
+            "id": "/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Far_Left",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Above Far Left Number",
+            "name": "Stratigraphic_Above_Far_Left",
+            "position": 22,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Stratigraphic_Above_Right",
+            "id": "/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Right",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Above Right Number",
+            "name": "Stratigraphic_Above_Right",
+            "position": 23,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Stratigraphic_Above_Far_Right",
+            "id": "/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Above_Far_Right",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Above Far Right Number",
+            "name": "Stratigraphic_Above_Far_Right",
+            "position": 24,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Stratigraphic_Below_Middle",
+            "id": "/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Middle",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Below Middle Number",
+            "name": "Stratigraphic_Below_Middle",
+            "position": 25,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Stratigraphic_Below_Left",
+            "id": "/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Left",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Below Left Number",
+            "name": "Stratigraphic_Below_Left",
+            "position": 26,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Stratigraphic_Below_Far_Left",
+            "id": "/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Far_Left",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Below Far Left Number",
+            "name": "Stratigraphic_Below_Far_Left",
+            "position": 27,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Stratigraphic_Below_Right",
+            "id": "/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Right",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Below Right Number",
+            "name": "Stratigraphic_Below_Right",
+            "position": 28,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Stratigraphic_Below_Far_Right",
+            "id": "/Context_Sheet_FS/Harris_Matrix/Stratigraphic_Below_Far_Right",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Below Far Right Number",
+            "name": "Stratigraphic_Below_Far_Right",
+            "position": 29,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          }
+        ],
+        "type": "esriQuestionTypeRepeat",
+        "validation": {
+          "inputCount": {
+            "isEnabled": false,
+            "max": -1,
+            "min": -1
+          }
+        }
+      },
+      {
+        "appearance": {
+          "layout": "expanded"
+        },
+        "id": "/Context_Sheet_FS/Spatial_Photographic_Info",
+        "label": "Spatial Photographic Information",
+        "name": "Spatial_Photographic_Info",
+        "position": 30,
+        "questions": [
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Plan_Numbers",
+            "id": "/Context_Sheet_FS/Spatial_Photographic_Info/Plan_Numbers",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Plan Numbers",
+            "name": "Plan_Numbers",
+            "position": 31,
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": true,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Other_Drawings",
+            "id": "/Context_Sheet_FS/Spatial_Photographic_Info/Other_Drawings",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Other Drawings",
+            "name": "Other_Drawings",
+            "position": 32,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "appearance": {
+              "layout": "vertical"
+            },
+            "choices": {
+              "items": [
+                {
+                  "label": "Yes",
+                  "position": 0,
+                  "value": "yes"
+                },
+                {
+                  "label": "No",
+                  "position": 1,
+                  "value": "no"
+                }
+              ],
+              "other": {
+                "isEnabled": false
+              }
+            },
+            "choicesOrder": {
+              "type": "default"
+            },
+            "fieldName": "Photographs",
+            "id": "/Context_Sheet_FS/Spatial_Photographic_Info/Photographs",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Photographs",
+            "name": "Photographs",
+            "position": 33,
+            "type": "esriQuestionTypeSingleChoice"
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Photo_ref_number",
+            "id": "/Context_Sheet_FS/Spatial_Photographic_Info/Photo_ref_number",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Photograph Reference Numbers",
+            "name": "Photo_ref_number",
+            "position": 34,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          }
+        ],
+        "type": "esriQuestionTypeGroup"
+      },
+      {
+        "appearance": {
+          "layout": "expanded"
+        },
+        "id": "/Context_Sheet_FS/Finds_information",
+        "label": "Finds information",
+        "name": "Finds_information",
+        "position": 35,
+        "questions": [
+          {
+            "appearance": {
+              "layout": "horizontal-compact"
+            },
+            "choices": {
+              "items": [
+                {
+                  "label": "Pot",
+                  "position": 0,
+                  "value": "Pot"
+                },
+                {
+                  "label": "Tile",
+                  "position": 1,
+                  "value": "Tile"
+                },
+                {
+                  "label": "Brick",
+                  "position": 2,
+                  "value": "Brick"
+                },
+                {
+                  "label": "Bone",
+                  "position": 3,
+                  "value": "Bone"
+                },
+                {
+                  "label": "Seed",
+                  "position": 4,
+                  "value": "Seed"
+                },
+                {
+                  "label": "Metal",
+                  "position": 5,
+                  "value": "Metal"
+                }
+              ],
+              "other": {
+                "isEnabled": false
+              }
+            },
+            "choicesOrder": {
+              "type": "default"
+            },
+            "fieldName": "Artefact_Present_Finds",
+            "id": "/Context_Sheet_FS/Finds_information/Artefact_Present_Finds",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Artefacts Present",
+            "name": "Artefact_Present_Finds",
+            "position": 36,
+            "type": "esriQuestionTypeMultiChoice",
+            "validation": {
+              "inputCount": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "appearance": {
+              "layout": "horizontal-compact"
+            },
+            "choices": {
+              "items": [
+                {
+                  "label": "All",
+                  "position": 0,
+                  "value": "All"
+                },
+                {
+                  "label": "Some",
+                  "position": 1,
+                  "value": "Some"
+                },
+                {
+                  "label": "None",
+                  "position": 2,
+                  "value": "None"
+                }
+              ],
+              "other": {
+                "isEnabled": false
+              }
+            },
+            "choicesOrder": {
+              "type": "default"
+            },
+            "fieldName": "Artefact_Present_Collection",
+            "id": "/Context_Sheet_FS/Finds_information/Artefact_Present_Collection",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Collection Keyword",
+            "name": "Artefact_Present_Collection",
+            "position": 37,
+            "type": "esriQuestionTypeSingleChoice"
+          },
+          {
+            "appearance": {
+              "layout": "horizontal-compact"
+            },
+            "choices": {
+              "items": [
+                {
+                  "label": "Bulk",
+                  "position": 0,
+                  "value": "Bulk"
+                },
+                {
+                  "label": "Char",
+                  "position": 1,
+                  "value": "Char"
+                },
+                {
+                  "label": "C14",
+                  "position": 2,
+                  "value": "C14"
+                },
+                {
+                  "label": "Dendr",
+                  "position": 3,
+                  "value": "Dendr"
+                },
+                {
+                  "label": "Other",
+                  "position": 4,
+                  "value": "Other"
+                }
+              ],
+              "other": {
+                "isEnabled": false
+              }
+            },
+            "choicesOrder": {
+              "type": "default"
+            },
+            "fieldName": "Samples_taken",
+            "id": "/Context_Sheet_FS/Finds_information/Samples_taken",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Samples taken",
+            "name": "Samples_taken",
+            "position": 38,
+            "type": "esriQuestionTypeMultiChoice",
+            "validation": {
+              "inputCount": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "no_bags_Bulk",
+            "id": "/Context_Sheet_FS/Finds_information/no_bags_Bulk",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Number of Bulk bags",
+            "name": "no_bags_Bulk",
+            "position": 39,
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": true,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "no_bags_Char",
+            "id": "/Context_Sheet_FS/Finds_information/no_bags_Char",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Number of Char bags",
+            "name": "no_bags_Char",
+            "position": 40,
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": true,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "no_bags_C14",
+            "id": "/Context_Sheet_FS/Finds_information/no_bags_C14",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Number of C14 bags",
+            "name": "no_bags_C14",
+            "position": 41,
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": true,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "no_bags_Dendr",
+            "id": "/Context_Sheet_FS/Finds_information/no_bags_Dendr",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Number of Dendr bags",
+            "name": "no_bags_Dendr",
+            "position": 42,
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": true,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "no_bags_Other",
+            "id": "/Context_Sheet_FS/Finds_information/no_bags_Other",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Number of Other bags",
+            "name": "no_bags_Other",
+            "position": 43,
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": true,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Initials",
+            "id": "/Context_Sheet_FS/Finds_information/Initials",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Initials",
+            "name": "Initials",
+            "position": 44,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "today()",
+            "defaultValue": "",
+            "fieldName": "Checked_Date",
+            "id": "/Context_Sheet_FS/Finds_information/Checked_Date",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Checked & Date",
+            "name": "Checked_Date",
+            "position": 45,
+            "type": "esriQuestionTypeDateTime",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          }
+        ],
+        "type": "esriQuestionTypeGroup"
+      },
+      {
+        "appearance": {
+          "layout": "expanded"
+        },
+        "id": "/Context_Sheet_FS/Interpretative_Info",
+        "label": "Interpretative Information",
+        "name": "Interpretative_Info",
+        "position": 46,
+        "questions": [
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Functional_Interp_and_comments",
+            "id": "/Context_Sheet_FS/Interpretative_Info/Functional_Interp_and_comments",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Functional Interpretation and Other Comments",
+            "name": "Functional_Interp_and_comments",
+            "position": 47,
+            "type": "esriQuestionTypeTextArea",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "appearance": {
+              "layout": "day-month-year"
+            },
+            "calculation": "today()",
+            "defaultValue": "",
+            "fieldName": "Provisional_Date",
+            "id": "/Context_Sheet_FS/Interpretative_Info/Provisional_Date",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Provisional Date",
+            "name": "Provisional_Date",
+            "position": 48,
+            "type": "esriQuestionTypeDate",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Phasing_Grouping",
+            "id": "/Context_Sheet_FS/Interpretative_Info/Phasing_Grouping",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Phasing/Grouping",
+            "name": "Phasing_Grouping",
+            "position": 49,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Initials_Interp",
+            "id": "/Context_Sheet_FS/Interpretative_Info/Initials_Interp",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Initials",
+            "name": "Initials_Interp",
+            "position": 50,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "appearance": {
+              "layout": "day-month-year"
+            },
+            "calculation": "today()",
+            "defaultValue": "",
+            "fieldName": "Finish_Date",
+            "id": "/Context_Sheet_FS/Interpretative_Info/Finish_Date",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Date",
+            "name": "Finish_Date",
+            "position": 51,
+            "type": "esriQuestionTypeDate",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "id": "/Context_Sheet_FS/Interpretative_Info/Images",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Images",
+            "name": "Images",
+            "position": 52,
+            "type": "esriQuestionTypeImage",
+            "validation": {
+              "allowFileType": {
+                "exts": [
+                  "bmp",
+                  "gif",
+                  "jp2",
+                  "jpg",
+                  "jpeg",
+                  "jpe",
+                  "png",
+                  "psd",
+                  "sid",
+                  "tif",
+                  "tiff"
+                ],
+                "type": "image"
+              },
+              "inputCount": {
+                "isEnabled": true,
+                "max": 1,
+                "min": 1
+              }
+            }
+          }
+        ],
+        "type": "esriQuestionTypeGroup"
+      }
+    ],
+    "rules": [],
+    "settings": {
+      "draftInfo": {
+        "isEnabled": false
+      },
+      "instanceName": null,
+      "isVersionLocked": true,
+      "multiSubmissionInfo": {
+        "maxAllowed": 0,
+        "showSubmitAnotherTip": false
+      },
+      "notificationsInfo": {},
+      "openStatusInfo": {
+        "closedStatusContent": "",
+        "schedule": {
+          "end": null,
+          "start": null
+        },
+        "status": "open"
+      },
+      "recordStartEndTime": {
+        "fieldInfos": [],
+        "isEnabled": false
+      },
+      "thankYouScreenContent": ""
+    },
+    "subHeader": {
+      "content": "",
+      "isVisible": true
+    },
+    "submit": {
+      "buttonText": ""
+    },
+    "themes": [
+      {
+        "form": {
+          "backgroundColor": "#ffffff",
+          "backgroundOpacity": 1,
+          "inputBackgroundColor": "#ffffff",
+          "inputTextColor": "#505050",
+          "primaryColor": "#31872E",
+          "primaryTextColor": "#ffffff",
+          "textColor": "#505050"
+        },
+        "header": {
+          "backgroundColor": "#31872E",
+          "textColor": "#ffffff"
+        },
+        "id": null,
+        "isEnabled": true,
+        "name": "theme-color1",
+        "webpage": {
+          "backgroundColor": "#B7DCC7"
+        }
+      }
+    ],
+    "version": "3.10"
+  },
+  "transformerVersion": "1.37.0"
+}

@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:esri="http://esri.com/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>My Survey</h:title>
+    <model>
+      <instance>
+        <Context_Survey_Tables id="Context_Survey_Tables">
+          <polygon/>
+          <Context_sheet jr:template="">
+            <Site_Code/>
+            <Context_Number/>
+          </Context_sheet>
+          <meta>
+            <instanceID/>
+          </meta>
+        </Context_Survey_Tables>
+      </instance>
+      <bind nodeset="/Context_Survey_Tables/polygon" type="geoshape"/>
+      <bind nodeset="/Context_Survey_Tables/Context_sheet/Site_Code" type="string"/>
+      <bind nodeset="/Context_Survey_Tables/Context_sheet/Context_Number" type="int"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Context_Survey_Tables/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Context_Survey_Tables/polygon">
+      <label>Polygon</label>
+    </input>
+    <group ref="/Context_Survey_Tables/Context_sheet">
+      <label>Context Sheet</label>
+      <repeat nodeset="/Context_Survey_Tables/Context_sheet">
+        <input ref="/Context_Survey_Tables/Context_sheet/Site_Code">
+          <label>Site Code</label>
+        </input>
+        <input ref="/Context_Survey_Tables/Context_sheet/Context_Number">
+          <label>Context Number</label>
+        </input>
+      </repeat>
+    </group>
+  </h:body>
+</h:html>

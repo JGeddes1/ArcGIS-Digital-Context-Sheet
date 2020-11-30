@@ -1,0 +1,58 @@
+{
+    "access": "private",
+    "accessInformation": null,
+    "appCategories": [
+    ],
+    "avgRating": 0,
+    "banner": null,
+    "categories": [
+    ],
+    "commentsEnabled": true,
+    "created": 1593685525000,
+    "culture": "en-gb",
+    "description": "This template includes all XLSForm features supported in Survey123 for ArcGIS.",
+    "documentation": null,
+    "extent": [
+    ],
+    "groupDesignations": null,
+    "guid": null,
+    "id": "47c656b607864a5e9247e0f49aa50949",
+    "industries": [
+    ],
+    "isOrgItem": true,
+    "itemControl": "admin",
+    "languages": [
+    ],
+    "largeThumbnail": null,
+    "licenseInfo": null,
+    "listed": false,
+    "modified": 1593685526000,
+    "name": "Context_Tables.zip",
+    "numComments": 0,
+    "numRatings": 0,
+    "numViews": 0,
+    "orgId": "WN5coiM8DFAUrNQ2",
+    "owner": "jgg513_uoy",
+    "ownerFolder": "7bd877b5e3c1471fa1fffe73f52d2699",
+    "properties": null,
+    "protected": false,
+    "proxyFilter": null,
+    "scoreCompleteness": 41,
+    "screenshots": [
+    ],
+    "size": 61218,
+    "snippet": "",
+    "spatialReference": null,
+    "tags": [
+    ],
+    "thumbnail": "thumbnail/Context_Tables.png",
+    "title": "Context Tables",
+    "type": "Form",
+    "typeKeywords": [
+        "Form",
+        "Survey123",
+        "Survey123 Connect",
+        "xForm"
+    ],
+    "url": null
+}

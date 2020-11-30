@@ -1,0 +1,58 @@
+{
+    "access": "private",
+    "accessInformation": null,
+    "appCategories": [
+    ],
+    "avgRating": 0,
+    "banner": null,
+    "categories": [
+    ],
+    "commentsEnabled": true,
+    "created": 1594142692000,
+    "culture": "en-gb",
+    "description": null,
+    "documentation": null,
+    "extent": [
+    ],
+    "groupDesignations": null,
+    "guid": null,
+    "id": "8abfd2fc5f8a403e9b6a79eaec293d05",
+    "industries": [
+    ],
+    "isOrgItem": true,
+    "itemControl": "admin",
+    "languages": [
+    ],
+    "largeThumbnail": null,
+    "licenseInfo": null,
+    "listed": false,
+    "modified": 1594551410000,
+    "name": "Small_Finds_Register_FS.zip",
+    "numComments": 0,
+    "numRatings": 0,
+    "numViews": 5,
+    "orgId": "WN5coiM8DFAUrNQ2",
+    "owner": "jgg513_uoy",
+    "ownerFolder": "0f60fed95a7844ee8ea0d04bdc8b53b4",
+    "properties": null,
+    "protected": false,
+    "proxyFilter": null,
+    "scoreCompleteness": 33,
+    "screenshots": [
+    ],
+    "size": 44567,
+    "snippet": null,
+    "spatialReference": null,
+    "tags": [
+    ],
+    "thumbnail": "thumbnail/Small_Finds_Register_FS.png",
+    "title": "Small Finds Register Form",
+    "type": "Form",
+    "typeKeywords": [
+        "Form",
+        "Survey123",
+        "Survey123 Connect",
+        "xForm"
+    ],
+    "url": null
+}

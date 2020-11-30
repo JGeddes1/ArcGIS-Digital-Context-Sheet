@@ -1,0 +1,186 @@
+{
+  "form": "<form autocomplete=\"off\" novalidate=\"novalidate\" class=\"or clearfix\" dir=\"ltr\" id=\"Small_Finds\">\n<!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSL stylesheet created by Enketo LLC.--><section class=\"form-logo\"> </section><h3 dir=\"auto\" id=\"form-title\">My Survey</h3>\n  \n  \n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Date</span><input type=\"date\" name=\"/Small_Finds/Dates\" data-type-xml=\"date\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Group</span><input type=\"number\" name=\"/Small_Finds/Groups_Finds\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Context Number</span><input type=\"number\" name=\"/Small_Finds/Context_Number\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Number</span><input type=\"number\" name=\"/Small_Finds/Find_Number\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Description</span><input type=\"text\" name=\"/Small_Finds/Description\" data-type-xml=\"string\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Notes</span><input type=\"text\" name=\"/Small_Finds/Notes\" data-type-xml=\"string\"/></label>\n  \n<fieldset id=\"or-calculated-items\" style=\"display:none;\"><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/Small_Finds/meta/instanceID\" data-calculate=\"concat('uuid:', uuid())\" data-type-xml=\"string\"/></label></fieldset></form>",
+  "languageMap": {},
+  "model": "<model><instance>\n        <Small_Finds xmlns:esri=\"http://esri.com/xforms\" xmlns:jr=\"http://openrosa.org/javarosa\" xmlns:odk=\"http://www.opendatakit.org/xforms\" xmlns:orx=\"http://openrosa.org/xforms\" id=\"Small_Finds\">\n          <Dates/>\n          <Groups_Finds/>\n          <Context_Number/>\n          <Find_Number/>\n          <Description/>\n          <Notes/>\n          <meta>\n            <instanceID/>\n          </meta>\n        </Small_Finds>\n      </instance></model>",
+  "success": true,
+  "surveyFormJson": {
+    "footer": {
+      "content": "",
+      "isVisible": true
+    },
+    "header": {
+      "content": "%3Cp%20title%3D'My%20Survey'%3EMy%20Survey%3C%2Fp%3E",
+      "isVisible": true
+    },
+    "layerName": "Small_Finds",
+    "portalUrl": "https://www.arcgis.com",
+    "questions": [
+      {
+        "appearance": {
+          "layout": "day-month-year"
+        },
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Dates",
+        "id": "/Small_Finds/Dates",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Date",
+        "name": "Dates",
+        "position": 0,
+        "type": "esriQuestionTypeDate",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Groups_Finds",
+        "id": "/Small_Finds/Groups_Finds",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Group",
+        "name": "Groups_Finds",
+        "position": 1,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Context_Number",
+        "id": "/Small_Finds/Context_Number",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Context Number",
+        "name": "Context_Number",
+        "position": 2,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Find_Number",
+        "id": "/Small_Finds/Find_Number",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Number",
+        "name": "Find_Number",
+        "position": 3,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Description",
+        "id": "/Small_Finds/Description",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Description",
+        "name": "Description",
+        "position": 4,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Notes",
+        "id": "/Small_Finds/Notes",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Notes",
+        "name": "Notes",
+        "position": 5,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      }
+    ],
+    "rules": [],
+    "settings": {
+      "draftInfo": {
+        "isEnabled": false
+      },
+      "instanceName": null,
+      "isVersionLocked": true,
+      "multiSubmissionInfo": {
+        "maxAllowed": 0,
+        "showSubmitAnotherTip": false
+      },
+      "notificationsInfo": {},
+      "openStatusInfo": {
+        "closedStatusContent": "",
+        "schedule": {
+          "end": null,
+          "start": null
+        },
+        "status": "open"
+      },
+      "recordStartEndTime": {
+        "fieldInfos": [],
+        "isEnabled": false
+      },
+      "thankYouScreenContent": ""
+    },
+    "subHeader": {
+      "content": "",
+      "isVisible": true
+    },
+    "submit": {
+      "buttonText": ""
+    },
+    "themes": [
+      {
+        "form": {
+          "backgroundColor": "#ffffff",
+          "backgroundOpacity": 1,
+          "inputBackgroundColor": "#ffffff",
+          "inputTextColor": "#505050",
+          "primaryColor": "#31872E",
+          "primaryTextColor": "#ffffff",
+          "textColor": "#505050"
+        },
+        "header": {
+          "backgroundColor": "#31872E",
+          "textColor": "#ffffff"
+        },
+        "id": null,
+        "isEnabled": true,
+        "name": "theme-color1",
+        "webpage": {
+          "backgroundColor": "#B7DCC7"
+        }
+      }
+    ],
+    "version": "3.10"
+  },
+  "transformerVersion": "1.37.0"
+}

@@ -1,0 +1,58 @@
+{
+    "access": "private",
+    "accessInformation": null,
+    "appCategories": [
+    ],
+    "avgRating": 0,
+    "banner": null,
+    "categories": [
+    ],
+    "commentsEnabled": true,
+    "created": 1593950068000,
+    "culture": "en-gb",
+    "description": null,
+    "documentation": null,
+    "extent": [
+    ],
+    "groupDesignations": null,
+    "guid": null,
+    "id": "1f821af4ec1046d69560eeeb058ec2ed",
+    "industries": [
+    ],
+    "isOrgItem": true,
+    "itemControl": "admin",
+    "languages": [
+    ],
+    "largeThumbnail": null,
+    "licenseInfo": null,
+    "listed": false,
+    "modified": 1594551897000,
+    "name": "Photo_Records_fs.zip",
+    "numComments": 0,
+    "numRatings": 0,
+    "numViews": 4,
+    "orgId": "WN5coiM8DFAUrNQ2",
+    "owner": "jgg513_uoy",
+    "ownerFolder": "c7eab434bc4b4a7fb0c5d914c392ab39",
+    "properties": null,
+    "protected": false,
+    "proxyFilter": null,
+    "scoreCompleteness": 33,
+    "screenshots": [
+    ],
+    "size": 43717,
+    "snippet": null,
+    "spatialReference": null,
+    "tags": [
+    ],
+    "thumbnail": "thumbnail/Photo_Records_fs.png",
+    "title": "Photo Records Form",
+    "type": "Form",
+    "typeKeywords": [
+        "Form",
+        "Survey123",
+        "Survey123 Connect",
+        "xForm"
+    ],
+    "url": null
+}

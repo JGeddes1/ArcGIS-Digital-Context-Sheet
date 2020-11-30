@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:esri="http://esri.com/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>My Survey</h:title>
+    <model>
+      <instance>
+        <Small_Finds id="Small_Finds">
+          <Dates/>
+          <Groups_Finds/>
+          <Context_Number/>
+          <Find_Number/>
+          <Description/>
+          <Notes/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </Small_Finds>
+      </instance>
+      <bind nodeset="/Small_Finds/Dates" type="date"/>
+      <bind nodeset="/Small_Finds/Groups_Finds" type="int"/>
+      <bind nodeset="/Small_Finds/Context_Number" type="int"/>
+      <bind nodeset="/Small_Finds/Find_Number" type="int"/>
+      <bind nodeset="/Small_Finds/Description" type="string"/>
+      <bind nodeset="/Small_Finds/Notes" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Small_Finds/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Small_Finds/Dates">
+      <label>Date</label>
+    </input>
+    <input ref="/Small_Finds/Groups_Finds">
+      <label>Group</label>
+    </input>
+    <input ref="/Small_Finds/Context_Number">
+      <label>Context Number</label>
+    </input>
+    <input ref="/Small_Finds/Find_Number">
+      <label>Number</label>
+    </input>
+    <input ref="/Small_Finds/Description">
+      <label>Description</label>
+    </input>
+    <input ref="/Small_Finds/Notes">
+      <label>Notes</label>
+    </input>
+  </h:body>
+</h:html>

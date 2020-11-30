@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:esri="http://esri.com/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Small Finds</h:title>
+    <model>
+      <submission action="https://www.arcgis.com/sharing/rest/content/items/98b796dff0aa44cbabeb65910a062cff" method="form-data-post"/>
+      <instance>
+        <Small_Finds_FS id="Small_Finds">
+          <Dates/>
+          <Groups_Finds/>
+          <Context_Number/>
+          <Find_Number/>
+          <Description/>
+          <Notes/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </Small_Finds_FS>
+      </instance>
+      <bind esri:fieldType="esriFieldTypeDate" nodeset="/Small_Finds_FS/Dates" type="dateTime"/>
+      <bind esri:fieldType="esriFieldTypeInteger" nodeset="/Small_Finds_FS/Groups_Finds" type="int"/>
+      <bind esri:fieldType="esriFieldTypeInteger" nodeset="/Small_Finds_FS/Context_Number" type="int"/>
+      <bind esri:fieldType="esriFieldTypeInteger" nodeset="/Small_Finds_FS/Find_Number" type="int"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Small_Finds_FS/Description" type="string"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Small_Finds_FS/Notes" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Small_Finds_FS/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Small_Finds_FS/Dates">
+      <label>Date</label>
+    </input>
+    <input ref="/Small_Finds_FS/Groups_Finds">
+      <label>Group</label>
+    </input>
+    <input ref="/Small_Finds_FS/Context_Number">
+      <label>Context Number</label>
+    </input>
+    <input ref="/Small_Finds_FS/Find_Number">
+      <label>Number</label>
+    </input>
+    <input ref="/Small_Finds_FS/Description">
+      <label>Description</label>
+    </input>
+    <input ref="/Small_Finds_FS/Notes">
+      <label>Notes</label>
+    </input>
+  </h:body>
+</h:html>

@@ -1,0 +1,48 @@
+{
+    "access": "public",
+    "accessInformation": "",
+    "appCategories": [
+    ],
+    "avgRating": 0,
+    "banner": null,
+    "categories": [
+    ],
+    "commentsEnabled": true,
+    "created": 1458621984000,
+    "culture": "en-us",
+    "description": "This template includes all XLSForm features supported in Survey123 for ArcGIS.",
+    "documentation": null,
+    "extent": [
+    ],
+    "groupDesignations": null,
+    "guid": null,
+    "industries": [
+    ],
+    "languages": [
+    ],
+    "largeThumbnail": null,
+    "licenseInfo": "",
+    "listed": false,
+    "modified": 1575588794000,
+    "numComments": 2,
+    "numRatings": 0,
+    "numViews": 236147,
+    "orgId": "jMCHJcLe13FaKCFB",
+    "properties": null,
+    "proxyFilter": null,
+    "scoreCompleteness": 41,
+    "screenshots": [
+    ],
+    "size": 62841,
+    "snippet": "",
+    "spatialReference": null,
+    "thumbnail": "thumbnail/advanced.png",
+    "title": "Context Table Test2",
+    "type": "Microsoft Excel",
+    "typeKeywords": [
+        "Data",
+        "Document",
+        "Microsoft Excel"
+    ],
+    "url": ""
+}

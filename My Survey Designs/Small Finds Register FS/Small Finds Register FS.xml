@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:esri="http://esri.com/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Small Finds Register</h:title>
+    <model>
+      <submission action="https://www.arcgis.com/sharing/rest/content/items/98b796dff0aa44cbabeb65910a062cff" method="form-data-post"/>
+      <instance>
+        <Small_Finds_Register_FS id="Small_Finds_Register">
+          <Small_Finds_Register_point/>
+          <GenID/>
+          <MachID/>
+          <X/>
+          <Y/>
+          <Z/>
+          <CODE/>
+          <Notes/>
+          <MachineNo/>
+          <Small_Finds_Number/>
+          <Surveyed/>
+          <Survey_no_reasoning/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </Small_Finds_Register_FS>
+      </instance>
+      <bind nodeset="/Small_Finds_Register_FS/Small_Finds_Register_point" type="geopoint"/>
+      <bind esri:fieldType="esriFieldTypeInteger" nodeset="/Small_Finds_Register_FS/GenID" type="int"/>
+      <bind esri:fieldType="esriFieldTypeInteger" nodeset="/Small_Finds_Register_FS/MachID" type="int"/>
+      <bind nodeset="/Small_Finds_Register_FS/X" type="decimal"/>
+      <bind nodeset="/Small_Finds_Register_FS/Y" type="decimal"/>
+      <bind nodeset="/Small_Finds_Register_FS/Z" type="decimal"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Small_Finds_Register_FS/CODE" type="string"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Small_Finds_Register_FS/Notes" type="string"/>
+      <bind esri:fieldType="esriFieldTypeString" nodeset="/Small_Finds_Register_FS/MachineNo" type="string"/>
+      <bind esri:fieldType="esriFieldTypeInteger" nodeset="/Small_Finds_Register_FS/Small_Finds_Number" type="int"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Small_Finds_Register_FS/Surveyed" type="select1"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Small_Finds_Register_FS/Survey_no_reasoning" relevant=" /Small_Finds_Register_FS/Surveyed  = 'no'" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Small_Finds_Register_FS/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Small_Finds_Register_FS/Small_Finds_Register_point">
+      <label>Point</label>
+    </input>
+    <input ref="/Small_Finds_Register_FS/GenID">
+      <label>GenID</label>
+    </input>
+    <input ref="/Small_Finds_Register_FS/MachID">
+      <label>MachID</label>
+    </input>
+    <input ref="/Small_Finds_Register_FS/X">
+      <label>X</label>
+    </input>
+    <input ref="/Small_Finds_Register_FS/Y">
+      <label>Y</label>
+    </input>
+    <input ref="/Small_Finds_Register_FS/Z">
+      <label>Z</label>
+    </input>
+    <input ref="/Small_Finds_Register_FS/CODE">
+      <label>CODE</label>
+    </input>
+    <input ref="/Small_Finds_Register_FS/Notes">
+      <label>Notes</label>
+    </input>
+    <input ref="/Small_Finds_Register_FS/MachineNo">
+      <label>MachineNo</label>
+    </input>
+    <input ref="/Small_Finds_Register_FS/Small_Finds_Number">
+      <label>Small Finds Number</label>
+    </input>
+    <select1 ref="/Small_Finds_Register_FS/Surveyed">
+      <label>Surveyed?</label>
+      <item>
+        <label>Yes</label>
+        <value>yes</value>
+      </item>
+      <item>
+        <label>No</label>
+        <value>no</value>
+      </item>
+    </select1>
+    <input ref="/Small_Finds_Register_FS/Survey_no_reasoning">
+      <label>Why not?</label>
+    </input>
+  </h:body>
+</h:html>

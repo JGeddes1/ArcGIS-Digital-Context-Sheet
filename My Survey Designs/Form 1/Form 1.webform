@@ -1,0 +1,191 @@
+{
+  "form": "<form autocomplete=\"off\" novalidate=\"novalidate\" class=\"or clearfix\" dir=\"ltr\" id=\"Form_1\">\n<!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSL stylesheet created by Enketo LLC.--><section class=\"form-logo\"> </section><h3 dir=\"auto\" id=\"form-title\">My Survey</h3>\n  \n  \n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Polygon</span><input type=\"text\" name=\"/Form_1/polygon\" data-type-xml=\"geoshape\"/></label>\n    <section class=\"or-group \" name=\"/Form_1/Context_Sheet\"><h4><span lang=\"\" class=\"question-label active\">Context Sheet</span></h4><section class=\"or-repeat \" name=\"/Form_1/Context_Sheet\"><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Site Code</span><input type=\"text\" name=\"/Form_1/Context_Sheet/Site_Code\" data-type-xml=\"string\"/></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Context Number</span><input type=\"number\" name=\"/Form_1/Context_Sheet/Context_Number\" data-type-xml=\"int\"/></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Polygon</span><input type=\"text\" name=\"/Form_1/Context_Sheet/polygon_cont\" data-type-xml=\"geoshape\"/></label>\n            </section><div class=\"or-repeat-info\" data-name=\"/Form_1/Context_Sheet\"/>\n            </section><!--end of group -->\n    <section class=\"or-group \" name=\"/Form_1/Context_Index\"><h4><span lang=\"\" class=\"question-label active\">Context Index</span></h4><section class=\"or-repeat \" name=\"/Form_1/Context_Index\"><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Context Number</span><input type=\"number\" name=\"/Form_1/Context_Index/Context_Number\" data-type-xml=\"int\"/></label>\n            </section><div class=\"or-repeat-info\" data-name=\"/Form_1/Context_Index\"/>\n            </section><!--end of group -->\n  \n<fieldset id=\"or-calculated-items\" style=\"display:none;\"><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/Form_1/meta/instanceID\" data-calculate=\"concat('uuid:', uuid())\" data-type-xml=\"string\"/></label></fieldset></form>",
+  "languageMap": {},
+  "model": "<model><instance>\n        <Form_1 xmlns:esri=\"http://esri.com/xforms\" xmlns:jr=\"http://openrosa.org/javarosa\" xmlns:odk=\"http://www.opendatakit.org/xforms\" xmlns:orx=\"http://openrosa.org/xforms\" id=\"Form_1\">\n          <polygon/>\n          <Context_Sheet jr:template=\"\">\n            <Site_Code/>\n            <Context_Number/>\n            <polygon_cont/>\n          </Context_Sheet>\n          <Context_Index jr:template=\"\">\n            <Context_Number/>\n          </Context_Index>\n          <meta>\n            <instanceID/>\n          </meta>\n        </Form_1>\n      </instance></model>",
+  "success": true,
+  "surveyFormJson": {
+    "footer": {
+      "content": "",
+      "isVisible": true
+    },
+    "header": {
+      "content": "%3Cp%20title%3D'My%20Survey'%3EMy%20Survey%3C%2Fp%3E",
+      "isVisible": true
+    },
+    "layerName": "Form_1",
+    "portalUrl": "https://www.arcgis.com",
+    "questions": [
+      {
+        "calculation": "",
+        "defaultExtent": {
+          "spatialReference": {}
+        },
+        "id": "/Form_1/polygon",
+        "inputTools": [
+          "vertex"
+        ],
+        "isDeviceLocationRequired": false,
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Polygon",
+        "maps": [],
+        "name": "polygon",
+        "position": 0,
+        "type": "esriQuestionTypePolygon"
+      },
+      {
+        "appearance": {
+          "layout": "expanded"
+        },
+        "id": "/Form_1/Context_Sheet",
+        "label": "Context Sheet",
+        "name": "Context_Sheet",
+        "position": 1,
+        "questions": [
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Site_Code",
+            "id": "/Form_1/Context_Sheet/Site_Code",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Site Code",
+            "name": "Site_Code",
+            "position": 2,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Context_Number",
+            "id": "/Form_1/Context_Sheet/Context_Number",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Context Number",
+            "name": "Context_Number",
+            "position": 3,
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": true,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultExtent": {
+              "spatialReference": {}
+            },
+            "id": "/Form_1/Context_Sheet/polygon_cont",
+            "inputTools": [
+              "vertex"
+            ],
+            "isDeviceLocationRequired": false,
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Polygon",
+            "maps": [],
+            "name": "polygon_cont",
+            "position": 4,
+            "type": "esriQuestionTypePolygon"
+          }
+        ],
+        "type": "esriQuestionTypeRepeat"
+      },
+      {
+        "appearance": {
+          "layout": "expanded"
+        },
+        "id": "/Form_1/Context_Index",
+        "label": "Context Index",
+        "name": "Context_Index",
+        "position": 5,
+        "questions": [
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Context_Number",
+            "id": "/Form_1/Context_Index/Context_Number",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Context Number",
+            "name": "Context_Number",
+            "position": 6,
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": true,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          }
+        ],
+        "type": "esriQuestionTypeRepeat"
+      }
+    ],
+    "rules": [],
+    "settings": {
+      "draftInfo": {
+        "isEnabled": false
+      },
+      "instanceName": null,
+      "isVersionLocked": true,
+      "multiSubmissionInfo": {
+        "maxAllowed": 0,
+        "showSubmitAnotherTip": false
+      },
+      "notificationsInfo": {},
+      "openStatusInfo": {
+        "closedStatusContent": "",
+        "schedule": {
+          "end": null,
+          "start": null
+        },
+        "status": "open"
+      },
+      "recordStartEndTime": {
+        "fieldInfos": [],
+        "isEnabled": false
+      },
+      "thankYouScreenContent": ""
+    },
+    "subHeader": {
+      "content": "",
+      "isVisible": true
+    },
+    "submit": {
+      "buttonText": ""
+    },
+    "themes": [
+      {
+        "form": {
+          "backgroundColor": "#ffffff",
+          "backgroundOpacity": 1,
+          "inputBackgroundColor": "#ffffff",
+          "inputTextColor": "#505050",
+          "primaryColor": "#31872E",
+          "primaryTextColor": "#ffffff",
+          "textColor": "#505050"
+        },
+        "header": {
+          "backgroundColor": "#31872E",
+          "textColor": "#ffffff"
+        },
+        "id": null,
+        "isEnabled": true,
+        "name": "theme-color1",
+        "webpage": {
+          "backgroundColor": "#B7DCC7"
+        }
+      }
+    ],
+    "version": "3.9"
+  },
+  "transformerVersion": "1.35.0"
+}

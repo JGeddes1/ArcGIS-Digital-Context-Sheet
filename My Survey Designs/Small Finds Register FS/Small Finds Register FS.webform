@@ -1,0 +1,331 @@
+{
+  "form": "<form autocomplete=\"off\" novalidate=\"novalidate\" class=\"or clearfix\" dir=\"ltr\" id=\"Small_Finds_Register\" action=\"https://www.arcgis.com/sharing/rest/content/items/98b796dff0aa44cbabeb65910a062cff\" method=\"post\">\n<!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSL stylesheet created by Enketo LLC.--><section class=\"form-logo\"> </section><h3 dir=\"auto\" id=\"form-title\">Small Finds Register</h3>\n  \n  \n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Point</span><input type=\"text\" name=\"/Small_Finds_Register_FS/Small_Finds_Register_point\" data-type-xml=\"geopoint\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">GenID</span><input type=\"number\" name=\"/Small_Finds_Register_FS/GenID\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">MachID</span><input type=\"number\" name=\"/Small_Finds_Register_FS/MachID\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">X</span><input type=\"number\" name=\"/Small_Finds_Register_FS/X\" data-type-xml=\"decimal\" step=\"any\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Y</span><input type=\"number\" name=\"/Small_Finds_Register_FS/Y\" data-type-xml=\"decimal\" step=\"any\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Z</span><input type=\"number\" name=\"/Small_Finds_Register_FS/Z\" data-type-xml=\"decimal\" step=\"any\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">CODE</span><input type=\"text\" name=\"/Small_Finds_Register_FS/CODE\" data-type-xml=\"string\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Notes</span><input type=\"text\" name=\"/Small_Finds_Register_FS/Notes\" data-type-xml=\"string\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">MachineNo</span><input type=\"text\" name=\"/Small_Finds_Register_FS/MachineNo\" data-type-xml=\"string\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Small Finds Number</span><input type=\"number\" name=\"/Small_Finds_Register_FS/Small_Finds_Number\" data-type-xml=\"int\"/></label>\n    <fieldset class=\"question simple-select \"><fieldset><legend><span lang=\"\" class=\"question-label active\">Surveyed?</span>\n                    </legend><div class=\"option-wrapper\"><label class=\"\"><input type=\"radio\" name=\"/Small_Finds_Register_FS/Surveyed\" data-name=\"/Small_Finds_Register_FS/Surveyed\" value=\"yes\" data-type-xml=\"select1\"/><span lang=\"\" class=\"option-label active\">Yes</span></label><label class=\"\"><input type=\"radio\" name=\"/Small_Finds_Register_FS/Surveyed\" data-name=\"/Small_Finds_Register_FS/Surveyed\" value=\"no\" data-type-xml=\"select1\"/><span lang=\"\" class=\"option-label active\">No</span></label></div></fieldset></fieldset>\n    <label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Why not?</span><input type=\"text\" name=\"/Small_Finds_Register_FS/Survey_no_reasoning\" data-relevant=\" /Small_Finds_Register_FS/Surveyed  = 'no'\" data-type-xml=\"string\"/></label>\n  \n<fieldset id=\"or-calculated-items\" style=\"display:none;\"><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/Small_Finds_Register_FS/meta/instanceID\" data-calculate=\"concat('uuid:', uuid())\" data-type-xml=\"string\"/></label></fieldset></form>",
+  "languageMap": {},
+  "model": "<model><instance>\n        <Small_Finds_Register_FS xmlns:esri=\"http://esri.com/xforms\" xmlns:jr=\"http://openrosa.org/javarosa\" xmlns:odk=\"http://www.opendatakit.org/xforms\" xmlns:orx=\"http://openrosa.org/xforms\" id=\"Small_Finds_Register\">\n          <Small_Finds_Register_point/>\n          <GenID/>\n          <MachID/>\n          <X/>\n          <Y/>\n          <Z/>\n          <CODE/>\n          <Notes/>\n          <MachineNo/>\n          <Small_Finds_Number/>\n          <Surveyed/>\n          <Survey_no_reasoning/>\n          <meta>\n            <instanceID/>\n          </meta>\n        </Small_Finds_Register_FS>\n      </instance></model>",
+  "success": true,
+  "surveyFormJson": {
+    "footer": {
+      "content": "",
+      "isVisible": true
+    },
+    "header": {
+      "content": "%3Cp%20title%3D'Small%20Finds%20Register'%3ESmall%20Finds%20Register%3C%2Fp%3E",
+      "isVisible": true
+    },
+    "layerName": "Small_Finds_Register",
+    "portalUrl": "https://www.arcgis.com",
+    "questions": [
+      {
+        "calculation": "",
+        "defaultExtent": {
+          "spatialReference": {}
+        },
+        "defaultValue": {
+          "spatialReference": {}
+        },
+        "displayFormats": [
+          "DD"
+        ],
+        "id": "/Small_Finds_Register_FS/Small_Finds_Register_point",
+        "inputTools": [
+          "pin",
+          "search",
+          "locate"
+        ],
+        "isDeviceLocationRequired": false,
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Point",
+        "maps": [
+          {
+            "isDefault": true,
+            "name": "connect_",
+            "type": "basemap"
+          }
+        ],
+        "name": "Small_Finds_Register_point",
+        "position": 0,
+        "type": "esriQuestionTypeGeoPoint"
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "GenID",
+        "fieldType": "esriFieldTypeInteger",
+        "id": "/Small_Finds_Register_FS/GenID",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "GenID",
+        "name": "GenID",
+        "position": 1,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "MachID",
+        "fieldType": "esriFieldTypeInteger",
+        "id": "/Small_Finds_Register_FS/MachID",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "MachID",
+        "name": "MachID",
+        "position": 2,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "X",
+        "id": "/Small_Finds_Register_FS/X",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "X",
+        "name": "X",
+        "position": 3,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": false,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Y",
+        "id": "/Small_Finds_Register_FS/Y",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Y",
+        "name": "Y",
+        "position": 4,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": false,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Z",
+        "id": "/Small_Finds_Register_FS/Z",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Z",
+        "name": "Z",
+        "position": 5,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": false,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldLength": "255",
+        "fieldName": "CODE",
+        "fieldType": "esriFieldTypeString",
+        "id": "/Small_Finds_Register_FS/CODE",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "CODE",
+        "name": "CODE",
+        "position": 6,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldLength": "255",
+        "fieldName": "Notes",
+        "fieldType": "esriFieldTypeString",
+        "id": "/Small_Finds_Register_FS/Notes",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Notes",
+        "name": "Notes",
+        "position": 7,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "MachineNo",
+        "fieldType": "esriFieldTypeString",
+        "id": "/Small_Finds_Register_FS/MachineNo",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "MachineNo",
+        "name": "MachineNo",
+        "position": 8,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Small_Finds_Number",
+        "fieldType": "esriFieldTypeInteger",
+        "id": "/Small_Finds_Register_FS/Small_Finds_Number",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Small Finds Number",
+        "name": "Small_Finds_Number",
+        "position": 9,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "appearance": {
+          "layout": "vertical"
+        },
+        "choices": {
+          "items": [
+            {
+              "label": "Yes",
+              "position": 0,
+              "value": "yes"
+            },
+            {
+              "label": "No",
+              "position": 1,
+              "value": "no"
+            }
+          ],
+          "other": {
+            "isEnabled": false
+          }
+        },
+        "choicesOrder": {
+          "type": "default"
+        },
+        "fieldLength": "255",
+        "fieldName": "Surveyed",
+        "fieldType": "esriFieldTypeString",
+        "id": "/Small_Finds_Register_FS/Surveyed",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Surveyed?",
+        "name": "Surveyed",
+        "position": 10,
+        "type": "esriQuestionTypeSingleChoice"
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldLength": "255",
+        "fieldName": "Survey_no_reasoning",
+        "fieldType": "esriFieldTypeString",
+        "id": "/Small_Finds_Register_FS/Survey_no_reasoning",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Why not?",
+        "name": "Survey_no_reasoning",
+        "position": 11,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      }
+    ],
+    "rules": [],
+    "settings": {
+      "draftInfo": {
+        "isEnabled": false
+      },
+      "instanceName": null,
+      "isVersionLocked": true,
+      "multiSubmissionInfo": {
+        "maxAllowed": 0,
+        "showSubmitAnotherTip": false
+      },
+      "notificationsInfo": {},
+      "openStatusInfo": {
+        "closedStatusContent": "",
+        "schedule": {
+          "end": null,
+          "start": null
+        },
+        "status": "open"
+      },
+      "recordStartEndTime": {
+        "fieldInfos": [],
+        "isEnabled": false
+      },
+      "thankYouScreenContent": ""
+    },
+    "subHeader": {
+      "content": "",
+      "isVisible": true
+    },
+    "submit": {
+      "buttonText": ""
+    },
+    "themes": [
+      {
+        "form": {
+          "backgroundColor": "#ffffff",
+          "backgroundOpacity": 1,
+          "inputBackgroundColor": "#ffffff",
+          "inputTextColor": "#505050",
+          "primaryColor": "#31872E",
+          "primaryTextColor": "#ffffff",
+          "textColor": "#505050"
+        },
+        "header": {
+          "backgroundColor": "#31872E",
+          "textColor": "#ffffff"
+        },
+        "id": null,
+        "isEnabled": true,
+        "name": "theme-color1",
+        "webpage": {
+          "backgroundColor": "#B7DCC7"
+        }
+      }
+    ],
+    "version": "3.10"
+  },
+  "transformerVersion": "1.37.0"
+}

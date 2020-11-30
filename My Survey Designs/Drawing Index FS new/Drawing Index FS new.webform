@@ -1,0 +1,210 @@
+{
+  "form": "<form autocomplete=\"off\" novalidate=\"novalidate\" class=\"or clearfix\" dir=\"ltr\" id=\"Drawing_Index\" action=\"https://www.arcgis.com/sharing/rest/content/items/322582761d454d9ead0fc703e0f21f12\" method=\"post\">\n<!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSL stylesheet created by Enketo LLC.--><section class=\"form-logo\"> </section><h3 dir=\"auto\" id=\"form-title\">Drawing Index</h3>\n  \n  \n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Drawing Number</span><span lang=\"\" class=\"or-hint active\">e.g 901</span><input type=\"text\" name=\"/Drawing_Index_FS_new/Drawing_Number\" data-type-xml=\"string\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Group</span><input type=\"number\" name=\"/Drawing_Index_FS_new/Group_Drawing\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Trench</span><input type=\"number\" name=\"/Drawing_Index_FS_new/Trench\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Context Number</span><input type=\"number\" name=\"/Drawing_Index_FS_new/Context_Number\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Description</span><span lang=\"\" class=\"or-hint active\">Section of plan (etc.)</span><input type=\"text\" name=\"/Drawing_Index_FS_new/Description\" data-type-xml=\"string\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Scale Drawing</span><span lang=\"\" class=\"or-hint active\">e.g 01:20</span><input type=\"text\" name=\"/Drawing_Index_FS_new/Scale_Drawing\" data-type-xml=\"string\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Notes</span><input type=\"text\" name=\"/Drawing_Index_FS_new/Notes\" data-type-xml=\"string\"/></label>\n  \n<fieldset id=\"or-calculated-items\" style=\"display:none;\"><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/Drawing_Index_FS_new/meta/instanceID\" data-calculate=\"concat('uuid:', uuid())\" data-type-xml=\"string\"/></label></fieldset></form>",
+  "languageMap": {},
+  "model": "<model><instance>\n        <Drawing_Index_FS_new xmlns:esri=\"http://esri.com/xforms\" xmlns:jr=\"http://openrosa.org/javarosa\" xmlns:odk=\"http://www.opendatakit.org/xforms\" xmlns:orx=\"http://openrosa.org/xforms\" id=\"Drawing_Index\">\n          <Drawing_Number/>\n          <Group_Drawing/>\n          <Trench/>\n          <Context_Number/>\n          <Description/>\n          <Scale_Drawing/>\n          <Notes/>\n          <meta>\n            <instanceID/>\n          </meta>\n        </Drawing_Index_FS_new>\n      </instance></model>",
+  "success": true,
+  "surveyFormJson": {
+    "footer": {
+      "content": "",
+      "isVisible": true
+    },
+    "header": {
+      "content": "%3Cp%20title%3D'Drawing%20Index'%3EDrawing%20Index%3C%2Fp%3E",
+      "isVisible": true
+    },
+    "layerName": "Drawing_Index",
+    "portalUrl": "https://www.arcgis.com",
+    "questions": [
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Drawing_Number",
+        "fieldType": "esriFieldTypeInteger",
+        "id": "/Drawing_Index_FS_new/Drawing_Number",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Drawing Number",
+        "name": "Drawing_Number",
+        "position": 0,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Group_Drawing",
+        "fieldType": "esriFieldTypeInteger",
+        "id": "/Drawing_Index_FS_new/Group_Drawing",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Group",
+        "name": "Group_Drawing",
+        "position": 1,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Trench",
+        "fieldType": "esriFieldTypeInteger",
+        "id": "/Drawing_Index_FS_new/Trench",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Trench",
+        "name": "Trench",
+        "position": 2,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Context_Number",
+        "fieldType": "esriFieldTypeInteger",
+        "id": "/Drawing_Index_FS_new/Context_Number",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Context Number",
+        "name": "Context_Number",
+        "position": 3,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldLength": "255",
+        "fieldName": "Description",
+        "fieldType": "esriFieldTypeString",
+        "id": "/Drawing_Index_FS_new/Description",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Description",
+        "name": "Description",
+        "position": 4,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldLength": "255",
+        "fieldName": "Scale_Drawing",
+        "fieldType": "esriFieldTypeString",
+        "id": "/Drawing_Index_FS_new/Scale_Drawing",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Scale Drawing",
+        "name": "Scale_Drawing",
+        "position": 5,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldLength": "255",
+        "fieldName": "Notes",
+        "fieldType": "esriFieldTypeString",
+        "id": "/Drawing_Index_FS_new/Notes",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Notes",
+        "name": "Notes",
+        "position": 6,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      }
+    ],
+    "rules": [],
+    "settings": {
+      "draftInfo": {
+        "isEnabled": false
+      },
+      "instanceName": null,
+      "isVersionLocked": true,
+      "multiSubmissionInfo": {
+        "maxAllowed": 0,
+        "showSubmitAnotherTip": false
+      },
+      "notificationsInfo": {},
+      "openStatusInfo": {
+        "closedStatusContent": "",
+        "schedule": {
+          "end": null,
+          "start": null
+        },
+        "status": "open"
+      },
+      "recordStartEndTime": {
+        "fieldInfos": [],
+        "isEnabled": false
+      },
+      "thankYouScreenContent": ""
+    },
+    "subHeader": {
+      "content": "",
+      "isVisible": true
+    },
+    "submit": {
+      "buttonText": ""
+    },
+    "themes": [
+      {
+        "form": {
+          "backgroundColor": "#ffffff",
+          "backgroundOpacity": 1,
+          "inputBackgroundColor": "#ffffff",
+          "inputTextColor": "#505050",
+          "primaryColor": "#31872E",
+          "primaryTextColor": "#ffffff",
+          "textColor": "#505050"
+        },
+        "header": {
+          "backgroundColor": "#31872E",
+          "textColor": "#ffffff"
+        },
+        "id": null,
+        "isEnabled": true,
+        "name": "theme-color1",
+        "webpage": {
+          "backgroundColor": "#B7DCC7"
+        }
+      }
+    ],
+    "version": "3.10"
+  },
+  "transformerVersion": "1.37.0"
+}

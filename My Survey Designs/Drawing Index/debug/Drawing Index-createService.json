@@ -1,0 +1,34 @@
+{
+    "_ssl": false,
+    "allowGeometryUpdates": true,
+    "capabilities": "Query,Editing,Create,Update,Delete",
+    "copyrightText": "",
+    "currentVersion": 10.3,
+    "description": "",
+    "editorTrackingInfo": {
+        "allowOthersToDelete": true,
+        "allowOthersToUpdate": true,
+        "enableEditorTracking": false,
+        "enableOwnershipAccessControl": false
+    },
+    "enableZDefaults": true,
+    "hasStaticData": false,
+    "hasVersionedData": false,
+    "maxRecordCount": 1000,
+    "name": "service_8f4246495e6d47f3a0e051de621d4a60",
+    "serviceDescription": "Drawing Index",
+    "spatialReference": {
+        "wkid": 4326
+    },
+    "supportedQueryFormats": "JSON",
+    "supportsDisconnectedEditing": false,
+    "syncEnabled": false,
+    "tables": [
+    ],
+    "units": "esriMeters",
+    "xssPreventionInfo": {
+        "xssInputRule": "rejectInvalid",
+        "xssPreventionEnabled": true,
+        "xssPreventionRule": "InputOnly"
+    }
+}

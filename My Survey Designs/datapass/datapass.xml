@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:esri="http://esri.com/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>My Survey</h:title>
+    <model>
+      <instance>
+        <datapass id="datapass">
+          <example/>
+          <shapes/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </datapass>
+      </instance>
+      <bind nodeset="/datapass/example" type="string"/>
+      <bind nodeset="/datapass/shapes" type="geoshape"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/datapass/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/datapass/example">
+      <label>Example</label>
+    </input>
+    <input ref="/datapass/shapes">
+      <label>Shape</label>
+    </input>
+  </h:body>
+</h:html>

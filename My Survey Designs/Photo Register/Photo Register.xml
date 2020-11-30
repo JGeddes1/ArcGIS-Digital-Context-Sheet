@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:esri="http://esri.com/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>My Survey</h:title>
+    <model>
+      <instance>
+        <Photo_Register id="Photo_Register">
+          <Photo_Number/>
+          <Date_Photo/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </Photo_Register>
+      </instance>
+      <bind nodeset="/Photo_Register/Photo_Number" type="string"/>
+      <bind nodeset="/Photo_Register/Date_Photo" type="date"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Photo_Register/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Photo_Register/Photo_Number">
+      <label>Photo Number</label>
+    </input>
+    <input ref="/Photo_Register/Date_Photo">
+      <label>Date</label>
+    </input>
+  </h:body>
+</h:html>

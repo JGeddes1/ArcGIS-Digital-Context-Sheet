@@ -1,0 +1,62 @@
+{
+    "layers": [
+        {
+            "id": 0,
+            "name": null,
+            "relationships": [
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 1,
+                    "keyField": "globalid",
+                    "name": "Form_1_Context_Sheet",
+                    "relatedTableId": 1,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleOrigin"
+                },
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 2,
+                    "keyField": "globalid",
+                    "name": "Form_1_Context_Index",
+                    "relatedTableId": 2,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleOrigin"
+                }
+            ]
+        },
+        {
+            "id": 1,
+            "name": null,
+            "relationships": [
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 1,
+                    "keyField": "parentglobalid",
+                    "name": "Form_1_Context_Sheet",
+                    "relatedTableId": 0,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleDestination"
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": null,
+            "relationships": [
+                {
+                    "cardinality": "esriRelCardinalityOneToMany",
+                    "composite": true,
+                    "id": 2,
+                    "keyField": "parentglobalid",
+                    "name": "Form_1_Context_Index",
+                    "relatedTableId": 0,
+                    "relatedTableName": null,
+                    "role": "esriRelRoleDestination"
+                }
+            ]
+        }
+    ]
+}

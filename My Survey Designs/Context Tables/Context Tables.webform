@@ -1,0 +1,292 @@
+{
+  "form": "<form autocomplete=\"off\" novalidate=\"novalidate\" class=\"or clearfix\" dir=\"ltr\" id=\"Context_Tables\">\n<!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSL stylesheet created by Enketo LLC.--><section class=\"form-logo\"> </section><h3 dir=\"auto\" id=\"form-title\">My Survey</h3>\n  \n  \n    <section class=\"or-group \" name=\"/Context_Tables/Context_Sheet\"><h4><span lang=\"\" class=\"question-label active\">Context Sheet</span></h4><section class=\"or-repeat \" name=\"/Context_Tables/Context_Sheet\"><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Site Code</span><input type=\"text\" name=\"/Context_Tables/Context_Sheet/Site_Code\" data-type-xml=\"string\"/></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Context Number</span><input type=\"number\" name=\"/Context_Tables/Context_Sheet/Context_Number\" data-type-xml=\"int\"/></label>\n            </section><div class=\"or-repeat-info\" data-name=\"/Context_Tables/Context_Sheet\"/>\n            </section><!--end of group -->\n    <section class=\"or-group \" name=\"/Context_Tables/Context_Index\"><h4><span lang=\"\" class=\"question-label active\">Context Index</span></h4><section class=\"or-repeat \" name=\"/Context_Tables/Context_Index\"><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Context Number</span><input type=\"number\" name=\"/Context_Tables/Context_Index/Context_Number\" data-type-xml=\"int\"/></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Group</span><input type=\"number\" name=\"/Context_Tables/Context_Index/Context_Group\" data-type-xml=\"int\"/></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Drawing</span><input type=\"text\" name=\"/Context_Tables/Context_Index/Context_Drawing\" data-type-xml=\"string\"/></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Samples</span><input type=\"text\" name=\"/Context_Tables/Context_Index/Context_Samples\" data-type-xml=\"string\"/></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Photo Number</span><input type=\"number\" name=\"/Context_Tables/Context_Index/Context_Photo_Number\" data-type-xml=\"int\"/></label><fieldset class=\"question simple-select \"><fieldset><legend><span lang=\"\" class=\"question-label active\">Type</span>\n                    </legend><div class=\"option-wrapper\"><label class=\"\"><input type=\"radio\" name=\"/Context_Tables/Context_Index/Context_Type\" data-name=\"/Context_Tables/Context_Index/Context_Type\" value=\"Cut\" data-type-xml=\"select1\"/><span lang=\"\" class=\"option-label active\">Cut</span></label><label class=\"\"><input type=\"radio\" name=\"/Context_Tables/Context_Index/Context_Type\" data-name=\"/Context_Tables/Context_Index/Context_Type\" value=\"Fill\" data-type-xml=\"select1\"/><span lang=\"\" class=\"option-label active\">Fill</span></label></div></fieldset></fieldset><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Description</span><input type=\"text\" name=\"/Context_Tables/Context_Index/Context_Description\" data-type-xml=\"string\"/></label><label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Notes</span><input type=\"text\" name=\"/Context_Tables/Context_Index/Context_Notes\" data-type-xml=\"string\"/></label>\n            </section><div class=\"or-repeat-info\" data-name=\"/Context_Tables/Context_Index\"/>\n            </section><!--end of group -->\n  \n<fieldset id=\"or-calculated-items\" style=\"display:none;\"><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/Context_Tables/meta/instanceID\" data-calculate=\"concat('uuid:', uuid())\" data-type-xml=\"string\"/></label></fieldset></form>",
+  "languageMap": {},
+  "model": "<model><instance>\n        <Context_Tables xmlns:esri=\"http://esri.com/xforms\" xmlns:jr=\"http://openrosa.org/javarosa\" xmlns:odk=\"http://www.opendatakit.org/xforms\" xmlns:orx=\"http://openrosa.org/xforms\" id=\"Context_Tables\">\n          <Context_Sheet jr:template=\"\">\n            <Site_Code/>\n            <Context_Number/>\n          </Context_Sheet>\n          <Context_Index jr:template=\"\">\n            <Context_Number/>\n            <Context_Group/>\n            <Context_Drawing/>\n            <Context_Samples/>\n            <Context_Photo_Number/>\n            <Context_Type/>\n            <Context_Description/>\n            <Context_Notes/>\n          </Context_Index>\n          <meta>\n            <instanceID/>\n          </meta>\n        </Context_Tables>\n      </instance></model>",
+  "success": true,
+  "surveyFormJson": {
+    "footer": {
+      "content": "",
+      "isVisible": true
+    },
+    "header": {
+      "content": "%3Cp%20title%3D'My%20Survey'%3EMy%20Survey%3C%2Fp%3E",
+      "isVisible": true
+    },
+    "layerName": "Context_Tables",
+    "portalUrl": "https://www.arcgis.com",
+    "questions": [
+      {
+        "appearance": {
+          "layout": "expanded"
+        },
+        "id": "/Context_Tables/Context_Sheet",
+        "label": "Context Sheet",
+        "name": "Context_Sheet",
+        "position": 0,
+        "questions": [
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Site_Code",
+            "id": "/Context_Tables/Context_Sheet/Site_Code",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Site Code",
+            "name": "Site_Code",
+            "position": 1,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Context_Number",
+            "id": "/Context_Tables/Context_Sheet/Context_Number",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Context Number",
+            "name": "Context_Number",
+            "position": 2,
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": true,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          }
+        ],
+        "type": "esriQuestionTypeRepeat"
+      },
+      {
+        "appearance": {
+          "layout": "expanded"
+        },
+        "id": "/Context_Tables/Context_Index",
+        "label": "Context Index",
+        "name": "Context_Index",
+        "position": 3,
+        "questions": [
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Context_Number",
+            "id": "/Context_Tables/Context_Index/Context_Number",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Context Number",
+            "name": "Context_Number",
+            "position": 4,
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": true,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Context_Group",
+            "id": "/Context_Tables/Context_Index/Context_Group",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Group",
+            "name": "Context_Group",
+            "position": 5,
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": true,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Context_Drawing",
+            "id": "/Context_Tables/Context_Index/Context_Drawing",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Drawing",
+            "name": "Context_Drawing",
+            "position": 6,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Context_Samples",
+            "id": "/Context_Tables/Context_Index/Context_Samples",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Samples",
+            "name": "Context_Samples",
+            "position": 7,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Context_Photo_Number",
+            "id": "/Context_Tables/Context_Index/Context_Photo_Number",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Photo Number",
+            "name": "Context_Photo_Number",
+            "position": 8,
+            "type": "esriQuestionTypeNumber",
+            "validation": {
+              "isInteger": true,
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "appearance": {
+              "layout": "vertical"
+            },
+            "choices": {
+              "items": [
+                {
+                  "label": "Cut",
+                  "position": 0,
+                  "value": "Cut"
+                },
+                {
+                  "label": "Fill",
+                  "position": 1,
+                  "value": "Fill"
+                }
+              ],
+              "other": {
+                "isEnabled": false
+              }
+            },
+            "choicesOrder": {
+              "type": "default"
+            },
+            "fieldName": "Context_Type",
+            "id": "/Context_Tables/Context_Index/Context_Type",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Type",
+            "name": "Context_Type",
+            "position": 9,
+            "type": "esriQuestionTypeSingleChoice"
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Context_Description",
+            "id": "/Context_Tables/Context_Index/Context_Description",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Description",
+            "name": "Context_Description",
+            "position": 10,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          },
+          {
+            "calculation": "",
+            "defaultValue": "",
+            "fieldName": "Context_Notes",
+            "id": "/Context_Tables/Context_Index/Context_Notes",
+            "isReadOnly": false,
+            "isRequired": false,
+            "label": "Notes",
+            "name": "Context_Notes",
+            "position": 11,
+            "type": "esriQuestionTypeText",
+            "validation": {
+              "valueRange": {
+                "isEnabled": false
+              }
+            }
+          }
+        ],
+        "type": "esriQuestionTypeRepeat"
+      }
+    ],
+    "rules": [],
+    "settings": {
+      "draftInfo": {
+        "isEnabled": false
+      },
+      "instanceName": null,
+      "isVersionLocked": true,
+      "multiSubmissionInfo": {
+        "maxAllowed": 0,
+        "showSubmitAnotherTip": false
+      },
+      "notificationsInfo": {},
+      "openStatusInfo": {
+        "closedStatusContent": "",
+        "schedule": {
+          "end": null,
+          "start": null
+        },
+        "status": "open"
+      },
+      "recordStartEndTime": {
+        "fieldInfos": [],
+        "isEnabled": false
+      },
+      "thankYouScreenContent": ""
+    },
+    "subHeader": {
+      "content": "",
+      "isVisible": true
+    },
+    "submit": {
+      "buttonText": ""
+    },
+    "themes": [
+      {
+        "form": {
+          "backgroundColor": "#ffffff",
+          "backgroundOpacity": 1,
+          "inputBackgroundColor": "#ffffff",
+          "inputTextColor": "#505050",
+          "primaryColor": "#31872E",
+          "primaryTextColor": "#ffffff",
+          "textColor": "#505050"
+        },
+        "header": {
+          "backgroundColor": "#31872E",
+          "textColor": "#ffffff"
+        },
+        "id": null,
+        "isEnabled": true,
+        "name": "theme-color1",
+        "webpage": {
+          "backgroundColor": "#B7DCC7"
+        }
+      }
+    ],
+    "version": "3.9"
+  },
+  "transformerVersion": "1.35.0"
+}

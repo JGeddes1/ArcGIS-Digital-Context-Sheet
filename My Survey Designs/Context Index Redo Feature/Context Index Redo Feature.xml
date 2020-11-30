@@ -1,0 +1,72 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:esri="http://esri.com/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>Context Index</h:title>
+    <model>
+      <submission action="https://www.arcgis.com/sharing/rest/content/items/d1300d5c555b428b9bba0917d43ee6b2" method="form-data-post"/>
+      <instance>
+        <Context_Index_Redo_Feature id="Context_Index">
+          <Context_Index_point/>
+          <Context_Number/>
+          <Context_Group/>
+          <Context_Drawing/>
+          <Context_Samples/>
+          <Context_Photo_Number/>
+          <Context_Type/>
+          <Context_Description/>
+          <Context_Notes/>
+          <meta>
+            <instanceID/>
+          </meta>
+        </Context_Index_Redo_Feature>
+      </instance>
+      <bind nodeset="/Context_Index_Redo_Feature/Context_Index_point" readonly="true()" type="geopoint"/>
+      <bind esri:fieldType="esriFieldTypeInteger" nodeset="/Context_Index_Redo_Feature/Context_Number" type="int"/>
+      <bind esri:fieldType="esriFieldTypeInteger" nodeset="/Context_Index_Redo_Feature/Context_Group" type="int"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Context_Index_Redo_Feature/Context_Drawing" type="string"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Context_Index_Redo_Feature/Context_Samples" type="string"/>
+      <bind esri:fieldType="esriFieldTypeInteger" nodeset="/Context_Index_Redo_Feature/Context_Photo_Number" type="int"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Context_Index_Redo_Feature/Context_Type" type="select1"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Context_Index_Redo_Feature/Context_Description" type="string"/>
+      <bind esri:fieldLength="255" esri:fieldType="esriFieldTypeString" nodeset="/Context_Index_Redo_Feature/Context_Notes" type="string"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Context_Index_Redo_Feature/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input appearance="minimal compact" ref="/Context_Index_Redo_Feature/Context_Index_point">
+      <label>Context Index Questions</label>
+    </input>
+    <input ref="/Context_Index_Redo_Feature/Context_Number">
+      <label>Context Number</label>
+    </input>
+    <input ref="/Context_Index_Redo_Feature/Context_Group">
+      <label>Group</label>
+    </input>
+    <input ref="/Context_Index_Redo_Feature/Context_Drawing">
+      <label>Drawing</label>
+    </input>
+    <input ref="/Context_Index_Redo_Feature/Context_Samples">
+      <label>Samples</label>
+    </input>
+    <input ref="/Context_Index_Redo_Feature/Context_Photo_Number">
+      <label>Photo Number</label>
+    </input>
+    <select1 ref="/Context_Index_Redo_Feature/Context_Type">
+      <label>Type</label>
+      <item>
+        <label>cut</label>
+        <value>cut</value>
+      </item>
+      <item>
+        <label>fill</label>
+        <value>fill</value>
+      </item>
+    </select1>
+    <input ref="/Context_Index_Redo_Feature/Context_Description">
+      <label>Description</label>
+    </input>
+    <input ref="/Context_Index_Redo_Feature/Context_Notes">
+      <label>Notes</label>
+    </input>
+  </h:body>
+</h:html>

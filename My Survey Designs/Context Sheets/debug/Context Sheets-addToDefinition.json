@@ -1,0 +1,716 @@
+{
+    "layers": [
+        {
+            "allowGeometryUpdates": true,
+            "capabilities": "Query,Editing,Create,Update,Delete",
+            "copyrightText": "",
+            "defaultVisibility": true,
+            "description": "",
+            "displayField": "objectid",
+            "drawingInfo": {
+                "labelingInfo": null,
+                "renderer": {
+                    "description": "Survey Data Locations",
+                    "label": "Context Sheets",
+                    "symbol": {
+                        "angle": 0,
+                        "color": [
+                            255,
+                            0,
+                            0,
+                            255
+                        ],
+                        "outline": {
+                            "color": [
+                                255,
+                                255,
+                                0,
+                                255
+                            ],
+                            "width": 1
+                        },
+                        "size": 8,
+                        "style": "esriSMSCircle",
+                        "type": "esriSMS",
+                        "xoffset": 0,
+                        "yoffset": 0
+                    },
+                    "type": "simple"
+                },
+                "transparency": 0
+            },
+            "extent": {
+                "spatialReference": {
+                    "wkid": 4326
+                },
+                "type": "extent",
+                "xmax": 180,
+                "xmin": -180,
+                "ymax": 90,
+                "ymin": -90
+            },
+            "fields": [
+                {
+                    "alias": "ObjectID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "name": "objectid",
+                    "nullable": false,
+                    "type": "esriFieldTypeOID"
+                },
+                {
+                    "alias": "GlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "length": 38,
+                    "name": "globalid",
+                    "nullable": false,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGlobalID"
+                },
+                {
+                    "alias": "Site Code",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Site_Code",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Context Number",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Context_Number",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Context Type",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "cut",
+                                "name": "cut"
+                            },
+                            {
+                                "code": "fill",
+                                "name": "fill"
+                            }
+                        ],
+                        "name": "cvd_Context_Types",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "Context_Types",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Colour",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Colour",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Composition",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Composition",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Compaction",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Compaction",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Thickness",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Thickness",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Other information and comments",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Other_Info_fill",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Shape in plan",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Shape_in_Plan",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Orientation",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Orientation",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Corners in plan",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Corners_in_plan",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Break in slope-top",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Break_slope_top",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Depth",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Context_Depth",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Nature of sides",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Nature_sides",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Break of slope-base",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Break_slope_base",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Nature of base",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Nature_base",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Other information and comments",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Other_Info_cut",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Plan Numbers",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Plan_Numbers",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Other Drawings",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Other_Drawings",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Photographs",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "yes",
+                                "name": "Yes"
+                            },
+                            {
+                                "code": "no",
+                                "name": "No"
+                            }
+                        ],
+                        "name": "cvd_Photographs",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "Photographs",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Photograph Reference Numbers",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Photo_ref_number",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Artefacts Present",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Artefact_Present_Finds",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Collection Keyword",
+                    "domain": {
+                        "codedValues": [
+                            {
+                                "code": "All",
+                                "name": "All"
+                            },
+                            {
+                                "code": "Some",
+                                "name": "Some"
+                            },
+                            {
+                                "code": "None",
+                                "name": "None"
+                            }
+                        ],
+                        "name": "cvd_Artefact_Present_Collection",
+                        "type": "codedValue"
+                    },
+                    "editable": true,
+                    "length": 255,
+                    "name": "Artefact_Present_Collection",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Samples taken",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Samples_taken",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Number of Bulk bags",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "no_bags_Bulk",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Number of Char bags",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "no_bags_Char",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Number of C14 bags",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "no_bags_C14",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Number of Dendr bags",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "no_bags_Dendr",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Number of Other bags",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "no_bags_Other",
+                    "nullable": true,
+                    "type": "esriFieldTypeInteger",
+                    "visible": true
+                },
+                {
+                    "alias": "Initials",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Initials",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Checked & Date",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Checked_Date",
+                    "nullable": true,
+                    "type": "esriFieldTypeDate",
+                    "visible": true
+                },
+                {
+                    "alias": "Functional Interpretation and Other Comments",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Functional_Interp_and_comments",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Provisional Date",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Provisional_Date",
+                    "nullable": true,
+                    "type": "esriFieldTypeDate",
+                    "visible": true
+                },
+                {
+                    "alias": "Phasing/Grouping",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Phasing_Grouping",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Initials",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Initials_Interp",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Date",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Finish_Date",
+                    "nullable": true,
+                    "type": "esriFieldTypeDate",
+                    "visible": true
+                }
+            ],
+            "geometryType": "esriGeometryPoint",
+            "globalIdField": "globalid",
+            "hasAttachments": false,
+            "hasM": false,
+            "hasStaticData": false,
+            "hasZ": false,
+            "htmlPopupType": "esriServerHTMLPopupTypeAsHTMLText",
+            "id": 0,
+            "indexes": [
+                {
+                    "description": "GlobalID index",
+                    "fields": "globalid",
+                    "isAscending": false,
+                    "isUnique": true,
+                    "name": "GlobalIDIndex"
+                }
+            ],
+            "isDataVersioned": false,
+            "maxRecordCount": 1000,
+            "maxScale": 0,
+            "minScale": 0,
+            "name": "Context_Sheets",
+            "objectIdField": "objectid",
+            "relationships": [
+            ],
+            "supportedQueryFormats": "JSON",
+            "supportsAdvancedQueries": true,
+            "supportsRollbackOnFailureParameter": true,
+            "supportsStatistics": true,
+            "templates": [
+            ],
+            "type": "Feature Layer",
+            "typeIdField": "",
+            "types": [
+            ]
+        }
+    ],
+    "tables": [
+        {
+            "capabilities": "Create,Delete,Query,Update,Uploads,Editing",
+            "copyrightText": "",
+            "defaultVisibility": true,
+            "description": "",
+            "displayField": "objectid",
+            "editFieldsInfo": null,
+            "fields": [
+                {
+                    "alias": "ObjectID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "name": "objectid",
+                    "nullable": false,
+                    "type": "esriFieldTypeOID"
+                },
+                {
+                    "alias": "GlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": false,
+                    "length": 38,
+                    "name": "globalid",
+                    "nullable": false,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGlobalID"
+                },
+                {
+                    "alias": "Stratigraphy",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Stratigraphy",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Centre Number",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Stratigraphic_Context",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Above Middle Number",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Stratigraphic_Above_Middle",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Above Left Number",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Stratigraphic_Above_Left",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Above Far Left Number",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Stratigraphic_Above_Far_Left",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Above Right Number",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Stratigraphic_Above_Right",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Above Far Right Number",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Stratigraphic_Above_Far_Right",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Below Middle Number",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Stratigraphic_Below_Middle",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Below Left Number",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Stratigraphic_Below_Left",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Below Far Left Number",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Stratigraphic_Below_Far_Left",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Below Right Number",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Stratigraphic_Below_Right",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "Below Far Right Number",
+                    "domain": null,
+                    "editable": true,
+                    "length": 255,
+                    "name": "Stratigraphic_Below_Far_Right",
+                    "nullable": true,
+                    "type": "esriFieldTypeString",
+                    "visible": true
+                },
+                {
+                    "alias": "ParentGlobalID",
+                    "defaultValue": null,
+                    "domain": null,
+                    "editable": true,
+                    "length": 38,
+                    "name": "parentglobalid",
+                    "nullable": true,
+                    "sqlType": "sqlTypeGUID",
+                    "type": "esriFieldTypeGUID"
+                }
+            ],
+            "globalIdField": "globalid",
+            "hasAttachments": false,
+            "htmlPopupType": "esriServerHTMLPopupTypeNone",
+            "id": 1,
+            "indexes": [
+                {
+                    "description": "GlobalID index",
+                    "fields": "globalid",
+                    "isAscending": false,
+                    "isUnique": true,
+                    "name": "GlobalIDIndex"
+                },
+                {
+                    "description": "Child Key Field index",
+                    "fields": "parentglobalid",
+                    "isAscending": false,
+                    "isUnique": false,
+                    "name": "ParentGlobalIDIndex"
+                }
+            ],
+            "isDataVersioned": false,
+            "maxRecordCount": 1000,
+            "name": "Harris_Matrix",
+            "objectIdField": "objectid",
+            "ownershipBasedAccessControlForFeatures": null,
+            "relationships": [
+            ],
+            "supportedQueryFormats": "JSON, AMF",
+            "supportsAdvancedQueries": true,
+            "supportsRollbackOnFailureParameter": true,
+            "supportsStatistics": true,
+            "syncCanReturnChanges": false,
+            "templates": [
+            ],
+            "type": "Table",
+            "typeIdField": "",
+            "types": [
+            ],
+            "useStandardizedQueries": true
+        }
+    ]
+}

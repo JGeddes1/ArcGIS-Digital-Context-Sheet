@@ -1,0 +1,33 @@
+{
+    "displayInfo": {
+        "map": {
+            "defaultType": {
+            },
+            "home": {
+                "latitude": 34.056223110283184,
+                "longitude": -117.19532583406398,
+                "zoomLevel": 15
+            },
+            "includeDefaultMaps": true,
+            "preview": {
+                "zoomLevel": 0
+            }
+        },
+        "style": {
+            "textColor": ""
+        }
+    },
+    "imagesInfo": {
+        "captureResolution": 640
+    },
+    "publishInfo": {
+    },
+    "queryInfo": {
+        "applySpatialFilter": true,
+        "mode": "",
+        "where": ""
+    },
+    "sentInfo": {
+        "enabled": true
+    }
+}

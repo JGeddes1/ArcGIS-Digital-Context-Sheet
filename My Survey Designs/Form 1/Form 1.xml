@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<h:html xmlns="http://www.w3.org/2002/xforms" xmlns:esri="http://esri.com/xforms" xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:h="http://www.w3.org/1999/xhtml" xmlns:jr="http://openrosa.org/javarosa" xmlns:odk="http://www.opendatakit.org/xforms" xmlns:orx="http://openrosa.org/xforms" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <h:head>
+    <h:title>My Survey</h:title>
+    <model>
+      <instance>
+        <Form_1 id="Form_1">
+          <polygon/>
+          <Context_Sheet jr:template="">
+            <Site_Code/>
+            <Context_Number/>
+            <polygon_cont/>
+          </Context_Sheet>
+          <Context_Index jr:template="">
+            <Context_Number/>
+          </Context_Index>
+          <meta>
+            <instanceID/>
+          </meta>
+        </Form_1>
+      </instance>
+      <bind nodeset="/Form_1/polygon" type="geoshape"/>
+      <bind nodeset="/Form_1/Context_Sheet/Site_Code" type="string"/>
+      <bind nodeset="/Form_1/Context_Sheet/Context_Number" type="int"/>
+      <bind nodeset="/Form_1/Context_Sheet/polygon_cont" type="geoshape"/>
+      <bind nodeset="/Form_1/Context_Index/Context_Number" type="int"/>
+      <bind calculate="concat('uuid:', uuid())" nodeset="/Form_1/meta/instanceID" readonly="true()" type="string"/>
+    </model>
+  </h:head>
+  <h:body>
+    <input ref="/Form_1/polygon">
+      <label>Polygon</label>
+    </input>
+    <group ref="/Form_1/Context_Sheet">
+      <label>Context Sheet</label>
+      <repeat nodeset="/Form_1/Context_Sheet">
+        <input ref="/Form_1/Context_Sheet/Site_Code">
+          <label>Site Code</label>
+        </input>
+        <input ref="/Form_1/Context_Sheet/Context_Number">
+          <label>Context Number</label>
+        </input>
+        <input ref="/Form_1/Context_Sheet/polygon_cont">
+          <label>Polygon</label>
+        </input>
+      </repeat>
+    </group>
+    <group ref="/Form_1/Context_Index">
+      <label>Context Index</label>
+      <repeat nodeset="/Form_1/Context_Index">
+        <input ref="/Form_1/Context_Index/Context_Number">
+          <label>Context Number</label>
+        </input>
+      </repeat>
+    </group>
+  </h:body>
+</h:html>

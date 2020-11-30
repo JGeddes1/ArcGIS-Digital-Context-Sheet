@@ -1,0 +1,270 @@
+{
+  "form": "<form autocomplete=\"off\" novalidate=\"novalidate\" class=\"or clearfix\" dir=\"ltr\" id=\"Small_Finds_Register\">\n<!--This form was created by transforming a OpenRosa-flavored (X)Form using an XSL stylesheet created by Enketo LLC.--><section class=\"form-logo\"> </section><h3 dir=\"auto\" id=\"form-title\">My Survey</h3>\n  \n  \n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">GenID</span><input type=\"number\" name=\"/Small_Finds_Register/GenID\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">MachID</span><input type=\"number\" name=\"/Small_Finds_Register/MachID\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">X</span><input type=\"number\" name=\"/Small_Finds_Register/X\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Y</span><input type=\"number\" name=\"/Small_Finds_Register/Y\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Z</span><input type=\"number\" name=\"/Small_Finds_Register/Z\" data-type-xml=\"int\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">CODE</span><input type=\"text\" name=\"/Small_Finds_Register/CODE\" data-type-xml=\"string\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Notes</span><input type=\"text\" name=\"/Small_Finds_Register/Notes\" data-type-xml=\"string\"/></label>\n    <label class=\"question non-select \"><span lang=\"\" class=\"question-label active\">Small Finds Number</span><input type=\"number\" name=\"/Small_Finds_Register/Small_Finds_Number\" data-type-xml=\"int\"/></label>\n    <fieldset class=\"question simple-select \"><fieldset><legend><span lang=\"\" class=\"question-label active\">Surveyed?</span>\n                    </legend><div class=\"option-wrapper\"><label class=\"\"><input type=\"radio\" name=\"/Small_Finds_Register/Surveyed\" data-name=\"/Small_Finds_Register/Surveyed\" value=\"yes\" data-type-xml=\"select1\"/><span lang=\"\" class=\"option-label active\">Yes</span></label><label class=\"\"><input type=\"radio\" name=\"/Small_Finds_Register/Surveyed\" data-name=\"/Small_Finds_Register/Surveyed\" value=\"no\" data-type-xml=\"select1\"/><span lang=\"\" class=\"option-label active\">No</span></label></div></fieldset></fieldset>\n    <label class=\"question or-branch pre-init non-select \"><span lang=\"\" class=\"question-label active\">Why not?</span><input type=\"text\" name=\"/Small_Finds_Register/Survey_no_reasoning\" data-relevant=\" /Small_Finds_Register/Surveyed  = 'no'\" data-type-xml=\"string\"/></label>\n  \n<fieldset id=\"or-calculated-items\" style=\"display:none;\"><label class=\"calculation non-select \"><input type=\"hidden\" name=\"/Small_Finds_Register/meta/instanceID\" data-calculate=\"concat('uuid:', uuid())\" data-type-xml=\"string\"/></label></fieldset></form>",
+  "languageMap": {},
+  "model": "<model><instance>\n        <Small_Finds_Register xmlns:esri=\"http://esri.com/xforms\" xmlns:jr=\"http://openrosa.org/javarosa\" xmlns:odk=\"http://www.opendatakit.org/xforms\" xmlns:orx=\"http://openrosa.org/xforms\" id=\"Small_Finds_Register\">\n          <GenID/>\n          <MachID/>\n          <X/>\n          <Y/>\n          <Z/>\n          <CODE/>\n          <Notes/>\n          <Small_Finds_Number/>\n          <Surveyed/>\n          <Survey_no_reasoning/>\n          <meta>\n            <instanceID/>\n          </meta>\n        </Small_Finds_Register>\n      </instance></model>",
+  "success": true,
+  "surveyFormJson": {
+    "footer": {
+      "content": "",
+      "isVisible": true
+    },
+    "header": {
+      "content": "%3Cp%20title%3D'My%20Survey'%3EMy%20Survey%3C%2Fp%3E",
+      "isVisible": true
+    },
+    "layerName": "Small_Finds_Register",
+    "portalUrl": "https://www.arcgis.com",
+    "questions": [
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "GenID",
+        "id": "/Small_Finds_Register/GenID",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "GenID",
+        "name": "GenID",
+        "position": 0,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "MachID",
+        "id": "/Small_Finds_Register/MachID",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "MachID",
+        "name": "MachID",
+        "position": 1,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "X",
+        "id": "/Small_Finds_Register/X",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "X",
+        "name": "X",
+        "position": 2,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Y",
+        "id": "/Small_Finds_Register/Y",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Y",
+        "name": "Y",
+        "position": 3,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Z",
+        "id": "/Small_Finds_Register/Z",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Z",
+        "name": "Z",
+        "position": 4,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "CODE",
+        "id": "/Small_Finds_Register/CODE",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "CODE",
+        "name": "CODE",
+        "position": 5,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Notes",
+        "id": "/Small_Finds_Register/Notes",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Notes",
+        "name": "Notes",
+        "position": 6,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Small_Finds_Number",
+        "id": "/Small_Finds_Register/Small_Finds_Number",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Small Finds Number",
+        "name": "Small_Finds_Number",
+        "position": 7,
+        "type": "esriQuestionTypeNumber",
+        "validation": {
+          "isInteger": true,
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      },
+      {
+        "appearance": {
+          "layout": "vertical"
+        },
+        "choices": {
+          "items": [
+            {
+              "label": "Yes",
+              "position": 0,
+              "value": "yes"
+            },
+            {
+              "label": "No",
+              "position": 1,
+              "value": "no"
+            }
+          ],
+          "other": {
+            "isEnabled": false
+          }
+        },
+        "choicesOrder": {
+          "type": "default"
+        },
+        "fieldName": "Surveyed",
+        "id": "/Small_Finds_Register/Surveyed",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Surveyed?",
+        "name": "Surveyed",
+        "position": 8,
+        "type": "esriQuestionTypeSingleChoice"
+      },
+      {
+        "calculation": "",
+        "defaultValue": "",
+        "fieldName": "Survey_no_reasoning",
+        "id": "/Small_Finds_Register/Survey_no_reasoning",
+        "isReadOnly": false,
+        "isRequired": false,
+        "label": "Why not?",
+        "name": "Survey_no_reasoning",
+        "position": 9,
+        "type": "esriQuestionTypeText",
+        "validation": {
+          "valueRange": {
+            "isEnabled": false
+          }
+        }
+      }
+    ],
+    "rules": [],
+    "settings": {
+      "draftInfo": {
+        "isEnabled": false
+      },
+      "instanceName": null,
+      "isVersionLocked": true,
+      "multiSubmissionInfo": {
+        "maxAllowed": 0,
+        "showSubmitAnotherTip": false
+      },
+      "notificationsInfo": {},
+      "openStatusInfo": {
+        "closedStatusContent": "",
+        "schedule": {
+          "end": null,
+          "start": null
+        },
+        "status": "open"
+      },
+      "recordStartEndTime": {
+        "fieldInfos": [],
+        "isEnabled": false
+      },
+      "thankYouScreenContent": ""
+    },
+    "subHeader": {
+      "content": "",
+      "isVisible": true
+    },
+    "submit": {
+      "buttonText": ""
+    },
+    "themes": [
+      {
+        "form": {
+          "backgroundColor": "#ffffff",
+          "backgroundOpacity": 1,
+          "inputBackgroundColor": "#ffffff",
+          "inputTextColor": "#505050",
+          "primaryColor": "#31872E",
+          "primaryTextColor": "#ffffff",
+          "textColor": "#505050"
+        },
+        "header": {
+          "backgroundColor": "#31872E",
+          "textColor": "#ffffff"
+        },
+        "id": null,
+        "isEnabled": true,
+        "name": "theme-color1",
+        "webpage": {
+          "backgroundColor": "#B7DCC7"
+        }
+      }
+    ],
+    "version": "3.10"
+  },
+  "transformerVersion": "1.37.0"
+}

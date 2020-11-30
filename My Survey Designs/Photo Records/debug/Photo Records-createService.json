@@ -1,0 +1,34 @@
+{
+    "_ssl": false,
+    "allowGeometryUpdates": true,
+    "capabilities": "Query,Editing,Create,Update,Delete",
+    "copyrightText": "",
+    "currentVersion": 10.3,
+    "description": "",
+    "editorTrackingInfo": {
+        "allowOthersToDelete": true,
+        "allowOthersToUpdate": true,
+        "enableEditorTracking": false,
+        "enableOwnershipAccessControl": false
+    },
+    "enableZDefaults": true,
+    "hasStaticData": false,
+    "hasVersionedData": false,
+    "maxRecordCount": 1000,
+    "name": "service_d1ee13c7e7894674bb9afd6206f301d6",
+    "serviceDescription": "Photo Records",
+    "spatialReference": {
+        "wkid": 4326
+    },
+    "supportedQueryFormats": "JSON",
+    "supportsDisconnectedEditing": false,
+    "syncEnabled": false,
+    "tables": [
+    ],
+    "units": "esriMeters",
+    "xssPreventionInfo": {
+        "xssInputRule": "rejectInvalid",
+        "xssPreventionEnabled": true,
+        "xssPreventionRule": "InputOnly"
+    }
+}
